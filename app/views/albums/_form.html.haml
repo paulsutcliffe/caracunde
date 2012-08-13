@@ -1,5 +1,5 @@
-- form_for(@album) do |f|
-  
+= form_for(@album) do |f|
+
   - if @album.errors.any?
     #errorExplanation
       %h2= t('activerecord.errors.messages.album.invalid_record')

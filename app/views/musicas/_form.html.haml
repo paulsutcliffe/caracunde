@@ -1,5 +1,5 @@
-- form_for(@musica) do |f|
-  
+= form_for(@musica) do |f|
+
   - if @musica.errors.any?
     #errorExplanation
       %h2= t('activerecord.errors.messages.musica.invalid_record')
