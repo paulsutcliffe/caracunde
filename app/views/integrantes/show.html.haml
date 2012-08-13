@@ -1,0 +1,11 @@
+%p
+  %strong t('activerecord.attributes.integrante.nome')
+  = @integrante.nome
+%p
+  %strong t('activerecord.attributes.integrante.descricao')
+  = @integrante.descricao
+%p
+  %strong t('activerecord.attributes.integrante.pais')
+  = @integrante.pais
+
+== #{ link_to t('edit'), edit_integrante_path(@integrante) } | #{ link_to t('back'), integrantes_path }

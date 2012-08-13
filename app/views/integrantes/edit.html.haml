@@ -1,0 +1,6 @@
+%h1
+  = t('integrante.edit.title')
+
+= render 'form'
+
+== #{ link_to t('show'), @integrante } | #{ link_to t('back'), integrantes_path }

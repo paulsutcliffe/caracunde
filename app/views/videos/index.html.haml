@@ -1,0 +1,20 @@
+%h1 
+  =t('videos.index.title')
+
+%table
+  %thead
+    %tr
+      %th 
+        =t('activerecord.attributes.video.link')
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for video in @videos
+      %tr{ :class => cycle(:odd, :even) }
+        %td= video.link
+        %td= link_to t('show'), video
+        %td= link_to t('edit'), edit_video_path(video)
+        %td= link_to t('destroy'), video, :confirm => I18n.t('confirm_delete'), :method => :delete
+
+%br
+= link_to t('video.new'), new_video_path

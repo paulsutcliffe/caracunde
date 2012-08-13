@@ -1,0 +1,11 @@
+%p
+  %strong t('activerecord.attributes.post.titulo')
+  = @post.titulo
+%p
+  %strong t('activerecord.attributes.post.conteudo')
+  = @post.conteudo
+%p
+  %strong t('activerecord.attributes.post.data')
+  = @post.data
+
+== #{ link_to t('edit'), edit_post_path(@post) } | #{ link_to t('back'), posts_path }

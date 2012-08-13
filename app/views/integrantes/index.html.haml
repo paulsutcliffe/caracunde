@@ -1,0 +1,26 @@
+%h1 
+  =t('integrantes.index.title')
+
+%table
+  %thead
+    %tr
+      %th 
+        =t('activerecord.attributes.integrante.nome')
+      %th 
+        =t('activerecord.attributes.integrante.descricao')
+      %th 
+        =t('activerecord.attributes.integrante.pais')
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for integrante in @integrantes
+      %tr{ :class => cycle(:odd, :even) }
+        %td= integrante.nome
+        %td= integrante.descricao
+        %td= integrante.pais
+        %td= link_to t('show'), integrante
+        %td= link_to t('edit'), edit_integrante_path(integrante)
+        %td= link_to t('destroy'), integrante, :confirm => I18n.t('confirm_delete'), :method => :delete
+
+%br
+= link_to t('integrante.new'), new_integrante_path

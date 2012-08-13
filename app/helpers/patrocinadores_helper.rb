@@ -1,0 +1,2 @@
+module PatrocinadoresHelper
+end

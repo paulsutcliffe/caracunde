@@ -41,7 +41,6 @@ group :development do
 end
 
 gem "haml"
-gem "haml-rails"
 gem "paperclip", "~>2.0"
 gem "will_paginate"
 gem "inherited_resources"

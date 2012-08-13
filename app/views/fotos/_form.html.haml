@@ -1,0 +1,15 @@
+- form_for(@foto) do |f|
+  
+  - if @foto.errors.any?
+    #errorExplanation
+      %h2= t('activerecord.errors.messages.foto.invalid_record')
+      %ul
+      - @foto.errors.full_messages.each do |msg|
+        %li= msg
+  .field
+    = f.label :album_id
+    %br
+    = f.text_field :album_id
+
+  .actions
+    = f.submit I18n.t('submit')

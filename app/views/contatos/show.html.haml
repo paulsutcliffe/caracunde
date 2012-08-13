@@ -1,0 +1,14 @@
+%p
+  %strong t('activerecord.attributes.contato.nome')
+  = @contato.nome
+%p
+  %strong t('activerecord.attributes.contato.email')
+  = @contato.email
+%p
+  %strong t('activerecord.attributes.contato.telefone')
+  = @contato.telefone
+%p
+  %strong t('activerecord.attributes.contato.mensagem')
+  = @contato.mensagem
+
+== #{ link_to t('edit'), edit_contato_path(@contato) } | #{ link_to t('back'), contatos_path }

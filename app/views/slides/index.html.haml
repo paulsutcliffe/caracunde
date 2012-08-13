@@ -1,0 +1,17 @@
+%h1 
+  =t('slides.index.title')
+
+%table
+  %thead
+    %tr
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for slide in @slides
+      %tr{ :class => cycle(:odd, :even) }
+        %td= link_to t('show'), slide
+        %td= link_to t('edit'), edit_slide_path(slide)
+        %td= link_to t('destroy'), slide, :confirm => I18n.t('confirm_delete'), :method => :delete
+
+%br
+= link_to t('slide.new'), new_slide_path

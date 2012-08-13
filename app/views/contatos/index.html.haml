@@ -1,0 +1,29 @@
+%h1 
+  =t('contatos.index.title')
+
+%table
+  %thead
+    %tr
+      %th 
+        =t('activerecord.attributes.contato.nome')
+      %th 
+        =t('activerecord.attributes.contato.email')
+      %th 
+        =t('activerecord.attributes.contato.telefone')
+      %th 
+        =t('activerecord.attributes.contato.mensagem')
+      %th{ :colspan => 3 }
+  
+  %tbody
+    - for contato in @contatos
+      %tr{ :class => cycle(:odd, :even) }
+        %td= contato.nome
+        %td= contato.email
+        %td= contato.telefone
+        %td= contato.mensagem
+        %td= link_to t('show'), contato
+        %td= link_to t('edit'), edit_contato_path(contato)
+        %td= link_to t('destroy'), contato, :confirm => I18n.t('confirm_delete'), :method => :delete
+
+%br
+= link_to t('contato.new'), new_contato_path
