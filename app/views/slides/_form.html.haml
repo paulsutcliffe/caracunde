@@ -1,11 +1,16 @@
-- form_for(@slide) do |f|
-  
+= form_for(@slide, :html => { :multipart => true }) do |f|
+
   - if @slide.errors.any?
     #errorExplanation
       %h2= t('activerecord.errors.messages.slide.invalid_record')
       %ul
       - @slide.errors.full_messages.each do |msg|
         %li= msg
+
+  .field
+    = f.label :slide
+    %br
+    = f.file_field :slide
 
   .actions
     = f.submit I18n.t('submit')

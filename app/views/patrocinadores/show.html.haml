@@ -1,5 +1,6 @@
 %p
   %strong t('activerecord.attributes.patrocinador.link')
   = @patrocinador.link
-
+%p
+  = image_tag(@patrocinador.logo(:medium))
 == #{ link_to t('edit'), edit_patrocinador_path(@patrocinador) } | #{ link_to t('back'), patrocinadores_path }

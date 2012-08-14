@@ -7,5 +7,6 @@
 %p
   %strong t('activerecord.attributes.integrante.pais')
   = @integrante.pais
-
+%p
+  = image_tag(@integrante.retrato(:medium))
 == #{ link_to t('edit'), edit_integrante_path(@integrante) } | #{ link_to t('back'), integrantes_path }
