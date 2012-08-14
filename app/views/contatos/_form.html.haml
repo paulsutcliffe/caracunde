@@ -1,5 +1,5 @@
-- form_for(@contato) do |f|
-  
+= form_for(@contato) do |f|
+
   - if @contato.errors.any?
     #errorExplanation
       %h2= t('activerecord.errors.messages.contato.invalid_record')
@@ -11,7 +11,7 @@
     %br
     = f.text_field :nome
   .field
-    = f.label :email
+    = f.label :email, "E-mail"
     %br
     = f.text_field :email
   .field
@@ -24,4 +24,4 @@
     = f.text_area :mensagem
 
   .actions
-    = f.submit I18n.t('submit')
+    = f.submit I18n.t('send')

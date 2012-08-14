@@ -1,6 +1,6 @@
 class ContatosController < InheritedResources::Base
   def create
-    create!(:notice => "Contato criado corretamente")
+    create!(:notice => "Sua mensagem foi enviada corretamente")
   end
   def update
     update!(:notice => "Contato atualizado corretamente")

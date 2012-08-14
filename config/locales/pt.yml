@@ -4,6 +4,7 @@ pt:
   destroy: Apagar
   confirm_delete: tem certeza de apagar?
   submit: Salvar
+  send: Enviar
   back: Voltar
   albums:
     index:
