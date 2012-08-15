@@ -1,5 +1,5 @@
 %p
   %strong t('activerecord.attributes.video.link')
-  = @video.link
+  = link_to @video.link, @video.link
 
 == #{ link_to t('edit'), edit_video_path(@video) } | #{ link_to t('back'), videos_path }

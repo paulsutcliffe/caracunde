@@ -1,5 +1,5 @@
-- form_for(@video) do |f|
-  
+= form_for(@video) do |f|
+
   - if @video.errors.any?
     #errorExplanation
       %h2= t('activerecord.errors.messages.video.invalid_record')
