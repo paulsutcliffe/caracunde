@@ -2,6 +2,12 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   before_filter :set_i18n_locale_from_params
+  before_filter :load_slides_e_patrocinadores
+
+  def load_slides_e_patrocinadores
+    @slides = Slide.all
+    @patrocinadores = Patrocinador.all
+  end
 
   protected
 

@@ -16,4 +16,3 @@ end
 Quando /^o integrante "(.*?)" existir$/ do |nome|
   Integrante.new(:nome => nome, :descricao => "Estudo um ano de piano erudito", :pais => "peru").save!
 end
-
