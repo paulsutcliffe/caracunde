@@ -1,5 +1,5 @@
 Quando /^adiciono a foto "(.*?)"$/ do |foto|
-  attach_file("Slide", File.expand_path("features/support/#{foto}"))
+  attach_file("Foto", File.expand_path("features/support/#{foto}"))
 end
 
 Então /^deveria ver a foto "(.*?)"$/ do |foto|

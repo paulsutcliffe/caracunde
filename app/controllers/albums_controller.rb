@@ -1,4 +1,5 @@
 class AlbumsController < InheritedResources::Base
+
   def create
     create!(:notice => "Album criado corretamente")
   end

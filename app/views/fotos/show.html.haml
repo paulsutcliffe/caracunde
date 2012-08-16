@@ -1,5 +1,3 @@
-%p
-  %strong t('activerecord.attributes.foto.album_id')
-  = @foto.album_id
+= image_tag(@foto.foto(:medium))
 
-== #{ link_to t('edit'), edit_foto_path(@foto) } | #{ link_to t('back'), fotos_path }
+== #{ link_to t('back'), album_path(@foto.album_id) }

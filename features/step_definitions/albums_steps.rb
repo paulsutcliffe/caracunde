@@ -18,14 +18,14 @@ Quando /^clico "(.*?)"$/ do |link|
 end
 
 Quando /^preencho "(.*?)" com "(.*?)"$/ do |campo, valor|
-  fill_in(:campo, :with => valor)
+  fill_in(campo, :with => valor)
 end
 
 Quando /^pressiono "(.*?)"$/ do |botao|
   click_button(botao)
 end
 
-Então /^deveria ver "(.*?)"$/ do |resultado|
+Então /^(?:deveria|que deveria) ver "(.*?)"$/ do |resultado|
   page.should have_content(resultado)
 end
 

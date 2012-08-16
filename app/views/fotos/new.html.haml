@@ -1,6 +1,6 @@
-%h1 
+%h1
   =t('foto.new')
 
 = render 'form'
 
-= link_to t('back'), fotos_path
+= link_to t('back'), album_path(params[:album_id])

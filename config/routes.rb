@@ -2,7 +2,7 @@ Caracunde::Application.routes.draw do
 
   scope '(:locale)', :locale => /#{I18n.available_locales.join("|")}/ do
 
-    resources :slides, :videos, :patrocinadores, :musicas, :integrantes, :posts, :contatos
+    resources :slides, :videos, :patrocinadores, :musicas, :integrantes, :posts, :contatos, :fotos
 
     resources :albums do
       resources :fotos
