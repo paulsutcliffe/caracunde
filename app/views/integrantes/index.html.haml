@@ -3,16 +3,20 @@
     %section.rotate-prevent
       %h2.title.sixteen.columns.alpha Integrantes
       
-      %article.sixteen.columns.alpha
-        %figure.inner.eight.columns.omega
-          = image_tag('/images/images/img-integrante-index.jpg')
-        .inner.eight.columns.alpha
-          %header
-            %h3 Alvaro
-          %div
-            %p Ruby blablabla
+      - for integrante in @integrantes
+        %article.sixteen.columns.alpha
+          %figure.inner.eight.columns.omega
+            = link_to image_tag('/images/images/img-integrante-index.jpg'), integrante
+          .inner.eight.columns.alpha
+            %header
+              %h3
+                = integrante.nome
+            %div
+              = integrante.pais
+              = sanitize(simple_format(truncate(integrante.descricao, :length => 370, :omission => '...')), :tags => %w(p i br b))
           %footer
-            = link_to 'Ver Biograf’a Completa', :class => 'btn see-more'
+            = link_to t('show'), integrante, :class => 'btn see-more'
+
 
 
 %h1 

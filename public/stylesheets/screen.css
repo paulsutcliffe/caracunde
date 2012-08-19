@@ -872,7 +872,8 @@ article header {
 /* line 246, ../../app/assets/stylesheets/_base.scss */
 header h3 {
   background: white;
-  padding: 0 10px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
   color: black;
   position: relative;
   float: left;
@@ -1044,20 +1045,20 @@ header h3 {
 /* line 291, ../../app/assets/stylesheets/_base.scss */
 #home section header,
 #home article header
-#noticias section header,
-#noticias article header {
+#posts section header,
+#posts article header {
   padding-bottom: 0;
   border: 0;
   margin-bottom: 10px;
 }
 
 /* line 292, ../../app/assets/stylesheets/_base.scss */
-#noticias article:nth-of-type(2n+1) {
+#posts article:nth-of-type(2n+1) {
   clear: left;
 }
 
 /* line 293, ../../app/assets/stylesheets/_base.scss */
-#noticias .top-date {
+#posts .top-date {
   position: absolute;
   top: -70px;
   right: 0;
@@ -1066,13 +1067,13 @@ header h3 {
 }
 
 /* line 294, ../../app/assets/stylesheets/_base.scss */
-#noticias .sixteen {
+#posts .sixteen {
   position: relative;
 }
 
 /* line 296, ../../app/assets/stylesheets/_base.scss */
-#noticias.show article figure,
-#noticias.show .figure {
+#posts.show article figure,
+#posts.show .figure {
   float: right;
 }
 

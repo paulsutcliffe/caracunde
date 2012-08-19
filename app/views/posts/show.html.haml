@@ -1,3 +1,30 @@
+#content.region.fancy.rotate-default
+  .container
+    %section.rotate-prevent
+      %h6.title.sixteen.columns.alpha
+        = @post.titulo
+      .share-links-type.eight.columns.alpha.omega
+        .inner
+          %span.label Compartir en
+          %ul
+            %li.facebook
+              %a
+            %li.twitter.last
+              %a
+      .sixteen.columns.alpha
+        %span.top-date.btn
+          = @post.data
+        .figure.inner.eight.columns.omega
+          = image_tag(@post.imagen(:full))
+        %div
+          = sanitize(simple_format(@post.conteudo), :tags => %w(p i br b))
+        .sixteen.columns.alpha Facebook chat
+        .footer
+          = link_to 'Atr‡s', posts_path, :class => 'link back'
+            
+            
+            
+
 %section#preface-bottom.container.region
   %h6.title.sixteen.columns.omega Noticias
 

@@ -243,7 +243,7 @@ PAGES
 #contactos.new section{}
 section header,
 article header{width:100%; padding-bottom:15px; float:left; border-bottom:1px solid #ff0000}
-header h3{background:white; padding:0 10px; color:black; position:relative; float:left; font-size:1.1em; text-transform:uppercase}
+header h3{background:white; padding:5px 10px; margin-bottom:5px; color:black; position:relative; float:left; font-size:1.1em; text-transform:uppercase}
 #contactos.new section .inner{padding-top:100px}
 #contactos.new section .inner.form{text-align:center}
 #contactos.new section .inner form{float:none; display:inline-block}
@@ -287,13 +287,13 @@ border-color:transparent transparent #4d4d4d transparent; border-style:solid; bo
 
 #home section header,
 #home article header
-#noticias section header,
-#noticias article header{padding-bottom:0; border:0; margin-bottom: 10px}
-#noticias article:nth-of-type(2n+1){clear:left}
-#noticias .top-date{position:absolute; top:-70px; right:0; background:#4d0000; text-align:right}
-#noticias .sixteen{position:relative}
-#noticias.show article figure,
-#noticias.show .figure{float:right}
+#posts section header,
+#posts article header{padding-bottom:0; border:0; margin-bottom: 10px}
+#posts article:nth-of-type(2n+1){clear:left}
+#posts .top-date{position:absolute; top:-70px; right:0; background:#4d0000; text-align:right}
+#posts .sixteen{position:relative}
+#posts.show article figure,
+#posts.show .figure{float:right}
 footer .btn{position:relative}
 
 /*

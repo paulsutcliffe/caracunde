@@ -1,3 +1,22 @@
+#content.region.fancy.rotate-default
+  .container
+    %section.rotate-prevent
+      %h6.title.sixteen.columns.alpha Noticias
+      
+      - for post in @posts
+        %article.eight.columns{ :class => cycle(:odd, :even) }
+          %header
+            %h2
+              = post.titulo
+          .four.columns.alpha
+            = sanitize(simple_format(post.conteudo), :tags => %w(p i br b))
+          %figure.four.columns.omega
+            = image_tag(post.imagen(:medium))
+          %footer
+            = link_to 'Leer Art’culo Completo', post, :class => 'btn read-more first'
+            %span.btn.date.last
+              = post.data
+
 %h1 
   =t('posts.index.title')
 
