@@ -1,0 +1,31 @@
+.menu
+  %nav.fifteen.columns
+    %ul
+      %li
+        = link_to_unless_current 'Noticias', posts_path do
+          %span Noticias
+      %li
+        = link_to_unless_current 'Integrantes', integrantes_path do
+          %span Integrantes
+      %li
+        = link_to_unless_current 'Videos', videos_path do
+          %span Videos
+      %li
+        = link_to_unless_current 'Fotos', fotos_path do
+          %span Fotos
+      %li
+        = link_to_unless_current 'Mœsicas', musicas_path do
+          %span Contato
+      %li
+        = link_to_unless_current 'Contato', 'contatos_path' do
+          %span Contato
+      %li
+        = link_to_unless_current 'Auspicios', 'patrocinador_path' do
+          %span Auspicios
+    %ul.countries
+      %li
+        = link_to image_tag('/images/icons/ico-flag-per.png'), 'google.com'
+        = link_to image_tag('/images/icons/ico-flag-usa.png'), 'google.com'
+        = link_to image_tag('/images/icons/ico-flag-bra.png'), 'google.com'
+          
+          

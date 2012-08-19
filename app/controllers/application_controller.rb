@@ -9,6 +9,31 @@ class ApplicationController < ActionController::Base
     @patrocinadores = Patrocinador.all
   end
 
+  
+  def bodyid
+    @bodyid = params[:controller].parameterize
+  end
+  def bodyclass
+    @bodyclass = params[:action].parameterize
+    
+    if params[:controller] == 'home'
+      @front = 'front'
+    else
+      @front = 'not-front'
+    end
+    
+    if current_usuario
+      @logged = 'logged-in'
+    else
+      @logged = 'not-logged-in'
+    end
+    
+    @bodyclass = @bodyclass + ' ' + @front + ' ' + @logged
+  end
+  
+  helper_method :bodyid
+  helper_method :bodyclass
+  
   protected
 
     def set_i18n_locale_from_params
