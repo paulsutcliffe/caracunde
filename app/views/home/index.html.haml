@@ -1,23 +1,16 @@
 %section#preface-bottom.container.region
   %h6.title.sixteen.columns.omega Noticias
   
-  %article.eight.columns
-    %header
-      %h2 title
-    .four.columns.alpha
-      %p blablabla
-    %figure.four.columns.omega
-      = link_to image_tag('/images/images/img-article-front.jpg')
-    %footer
-      = link_to 'Leer Art’culo Completo', :class => 'btn read-more first'
-      %span.btn.date.last 03 julio
+  - @posts.each do |post|
+    %article.eight.columns
+      %header
+        %h2
+          = post.titulo
+      .four.columns.alpha
+        = sanitize(simple_format(truncate(post.conteudo, :length => 370, :omission => '...')), :tags => %w(p i br b))
+      %figure.four.columns.omega
+        = link_to image_tag(post.imagen(:medium))
+      %footer
+        = link_to 'Leer Art’culo Completo', 'google.com', :class => 'btn read-more first'
+        %span.btn.date.last 03 julio
       
-
- 
-
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
-- @posts.each do |post|
-  = post.titulo
-  = post.conteudo
-  = image_tag(post.imagen(:medium))

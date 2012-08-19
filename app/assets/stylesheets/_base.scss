@@ -224,7 +224,7 @@ CONTENT TYPES
 =============================================
 */
 
-article h2{font-size:1.2em; border-bottom:1px solid #ff0000}
+article h2{font-size:1.2em; border-bottom:1px solid #ff0000; text-transform: uppercase; margin-bottom:5px}
 .btn{min-width:190px; height:40px; padding:0 10px; line-height:260%; display:block; font-size:0.9em; text-align:center}
 .btn.read-more{background:#4d4d4d}
 .btn.date{background:#4d0000; text-align:right}
@@ -285,9 +285,10 @@ border-color:transparent transparent #4d4d4d transparent; border-style:solid; bo
 #integrantes.show article figure,
 #integrantes.show .figure{margin-left:20px}
 
-
+#home section header,
+#home article header
 #noticias section header,
-#noticias article header{padding-bottom:0; border:0}
+#noticias article header{padding-bottom:0; border:0; margin-bottom: 10px}
 #noticias article:nth-of-type(2n+1){clear:left}
 #noticias .top-date{position:absolute; top:-70px; right:0; background:#4d0000; text-align:right}
 #noticias .sixteen{position:relative}
