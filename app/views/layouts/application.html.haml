@@ -11,10 +11,10 @@
     = yield(:head)
 
   %body{:id => bodyid, :class => bodyclass}
-    %header.main
+    %header.main.region.border-region
       #main-menu.container
         = render 'layouts/menu'
-      .slider.rotate-default
+      #slider
         .flexslider.carousel
           %ul.slides.rotate-prevent-img
             %li.royalSlide
@@ -25,9 +25,10 @@
           = link_to image_tag("/images/logo.png"), 'google', :class => 'eight columns'
               
     #main
-      = yield
+      #content.region.border-region
+        = yield
       
-    #postscript-top.region.fancy.rotate-default.gallery-type
+    #postscript-top.region.border-region.gallery-type
       .container.rotate-prevent
         %h6.title.sixteen.columns.omega Auspiciadores
         %ul   
@@ -58,7 +59,7 @@
           %p#author.eight.columns.omega
             web development and web design by 
             = link_to 'kosmyka', 'http://www.kosmyka.com', :target => '_blank'
-      
+    .dimension  
       
     #container
       - flash.each do |name, msg|

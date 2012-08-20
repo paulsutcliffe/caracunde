@@ -1,21 +1,22 @@
-%section#preface-bottom.container.region
-  %h6.title.sixteen.columns.omega Noticias
+%section#preface-bottom.region.border-region
+  .container
+    %h6.title.sixteen.columns.omega Noticias
   
-  - @posts.each do |post|
-    %article.eight.columns
-      %header
-        %h2
-          = post.titulo
-      .four.columns.alpha
-        = sanitize(simple_format(truncate(post.conteudo, :length => 370, :omission => '...')), :tags => %w(p i br b))
-      %figure.four.columns.omega
-        = link_to image_tag(post.imagen(:medium)), post
-      %footer
-        = link_to 'Leer Art’culo Completo', post, :class => 'btn read-more first'
-        %span.btn.date.last 03 julio
+    - @posts.each do |post|
+      %article.eight.columns
+        %header
+          %h2
+            = post.titulo
+        .four.columns.alpha
+          = sanitize(simple_format(truncate(post.conteudo, :length => 370, :omission => '...')), :tags => %w(p i br b))
+        %figure.four.columns.omega
+          = link_to image_tag(post.imagen(:medium)), post
+        %footer
+          = link_to 'Leer Art’culo Completo', post, :class => 'btn read-more first'
+          %span.btn.date.last 03 julio
       
 
-#content.region.fancy.rotate-default
+#content.region.border-region
   .container
     %article.rotate-prevent
       %h6.title.sixteen.columns.alpha Caracunde

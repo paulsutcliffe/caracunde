@@ -118,27 +118,6 @@ h4, h5, h6{color:white}
 
 /* Skeleton Responsive
 ================================================== */
-.rotate-default{width:110% !important; position:relative; left:-4%; overflow:hidden;
--moz-transform:rotate(-3deg); -webkit-transform:rotate(-3deg); -o-transform:rotate(-3deg); -ms-transform:rotate(-3deg); transform:rotate(-3deg);
-/*filter: progid:DXImageTransform.Microsoft.Matrix(
-M11=0.9986295347545738, M12=0.05233595624294383, M21=-0.05233595624294383, M22=0.9986295347545738, sizingMethod='auto expand');
-zoom: 1*/}
-.rotate-prevent,
-.rotate-prevent-img img{ -moz-transform:rotate(3deg); -webkit-transform:rotate(3deg); -khtml-transform:rotate(3deg); 
--o-transform:rotate(3deg); -ms-transform:rotate(3deg); transform:rotate(3deg);
-/*filter: progid:DXImageTransform.Microsoft.Matrix(
-M11=0.9986295347545738, M12=-0.05233595624294383, M21=0.05233595624294383, M22=0.9986295347545738, sizingMethod='auto expand');
-zoom: 1*/}
-/*
-.ie .rotate-default,
-.ie .rotate-prevent,
-.ie .rotate-prevent-img img{width:100% !important; position:relative; left:auto;
-filter: progid:DXImageTransform.Microsoft.Matrix(
-M11=1, M12=0, M21=0, M22=1, sizingMethod='auto expand');
-zoom: 1;}
-
-*/
-
 
 
 
@@ -172,8 +151,8 @@ HEADER
 */
 
 header.main{position:relative}
-header.main .rotate-default{height:640px; position:relative; top:-80px; left:-5%}
-header.main #logo-wrapper{width:100%; position:absolute; left:0; top:70%; text-align:center}
+header.main #slider{height:700px; position:relative; top:-80px; overflow: hidden}
+header.main #logo{width:100%; position:absolute; left:0; top:60%; text-align:center; z-index:5999}
 header.main #logo span{display:none}
 header.main #logo{text-align:center}
 header.main #logo a{margin:0 auto; display:inline-block; float:none}
@@ -198,6 +177,19 @@ header.main .flexslider.carousel .flex-direction-nav{display:none}
 
 header .rotate-default{}
 
+
+/* rotation */
+.region.border-region{position:relative; padding-bottom:200px}
+.region.border-region:after{content:""; visibility:visible; z-index:20px; background:black;
+border-top:40px solid white;
+position:absolute; bottom:-100px; left:-10%; width:120%; height:200px; -moz-transform:rotate(-2deg)}
+header.region.border-region{height:560px}
+header.region.border-region:after{border-color:transparent}
+header.region.border-region .container{top:0}
+#preface-bottom{background:black}
+#preface-bottom:after{background:#ff0000}
+.region.border-region .container{position:relative; top:-25px}
+
 /* 
 ================================================== 
 FOOTER
@@ -216,7 +208,7 @@ REGIONS
 =============================================
 */
 
-div.region{width:100%}
+div.region{width:100%; background: black}
 .front #content{background:#ff0000}
 .region.fancy{border-color:white; border-width:40px 0 0px; border-style:solid }
 
@@ -359,16 +351,16 @@ CONTENT TYPES
 .gallery-type li.columns{float:left; margin-right:90px}
 .gallery-type li.columns:nth-of-type(4n+4){margin-right:0}
 
-#albums .gallery-type li.columns{float:left; padding-bottom:15px; margin:0 80px 0px 0; border-bottom:1px solid #ff0000}
-#albums .gallery-type li.columns:nth-of-type(2n+2){margin-right:0}
-#albums .gallery-type li.columns h3{margin-bottom:25px; position:relative}
-#albums .gallery-type li.columns h3 a{font-size:0.6em; padding:0px 10px; display:block; text-transform:uppercase; background:white; color:black}
+#albums #content .gallery-type li.columns{float:left; padding-bottom:15px; margin:0 80px 0px 0; border-bottom:1px solid #ff0000}
+#albums #content .gallery-type li.columns:nth-of-type(2n+2){margin-right:0}
+#albums #content .gallery-type li.columns h3{margin-bottom:25px; position:relative}
+#albums #content .gallery-type li.columns h3 a{font-size:0.6em; padding:0px 10px; display:block; text-transform:uppercase; background:white; color:black}
 
-#videos .gallery-type li.columns{float:left; padding-bottom:15px; margin:0 80px 0px 0; border-bottom:1px solid #ff0000}
-#videos .gallery-type li.columns:nth-of-type(2n+2){margin-right:0}
-#videos .gallery-type li.columns h3{margin-bottom:25px; position:relative}
-#videos .gallery-type li.columns h3 a{font-size:0.6em; padding:0px 10px; display:block; text-transform:uppercase; background:white; color:black}
-#videos .share-links-type{border:0}
+#videos #content .gallery-type li.columns{float:left; padding-bottom:15px; margin:0 80px 0px 0; border-bottom:1px solid #ff0000}
+#videos #content .gallery-type li.columns:nth-of-type(2n+2){margin-right:0}
+#videos #content .gallery-type li.columns h3{margin-bottom:25px; position:relative}
+#videos #content .gallery-type li.columns h3 a{font-size:0.6em; padding:0px 10px; display:block; text-transform:uppercase; background:white; color:black}
+#videos #content .share-links-type{border:0}
 
 /* div.video-type ul
 ================================================== */
@@ -487,13 +479,13 @@ DEFAULT BLOCKS
 .ptop-7, .pagination-type{padding-top:35px}
 .ptop-8{padding-top:40px}
 .ptop-9{padding-top:45px}
-.ptop-10, .region{padding-top:50px}
+.ptop-10{padding-top:50px}
 .ptop-11{padding-top:55px}
 .ptop-12{padding-top:60px}
 .ptop-13{padding-top:65px}
 .ptop-14{padding-top:70px}
 .ptop-15{padding-top:75px}
-.ptop-16, footer.main{padding-top:80px}
+.ptop-16{padding-top:80px}
 .ptop-17{padding-top:85px}
 .ptop-18{padding-top:90px}
 .ptop-19{padding-top:95px}
@@ -618,7 +610,7 @@ filter: progid:DXImageTransform.Microsoft.Matrix(
 M11=0.984807753012208, M12=0.17364817766693033, M21=-0.17364817766693033, M22=0.984807753012208, sizingMethod='auto expand');
 zoom: 1}
 
-#albums .gallery-type li.columns h3:after,
+#albums #content .gallery-type li.columns h3:after,
 .share-links-type .inner:after,
 header h3:after,
 .top-date:after{content:""; display:block; width:0; height:0; border-width:15px; border-style:solid; 
@@ -647,21 +639,23 @@ footer .btn.date:after{border-bottom-color:#4d0000}
 
 /* #Media Queries
 ================================================== */
-
+.dimension{height:40px; background: white; color:black; display:none}
+.dimension:after{content:"max";background:white; position:fixed; bottom:0; left:0; color:black; z-index: 99999}
 	/* Smaller than standard 960 (devices and browsers) */
 	@media only screen and (max-width: 959px) {
-	  header.main .rotate-default{}	
+	  .dimension:after{content:'max-width: 959px'}
+	  header.region.border-region{height:260px}
 	}
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
-	  header.main,
-	  header.main .rotate-default{height:440px}	 
+	  .dimension:after{content:'min-width: 768px, max-width: 959px'}
+	   header.region.border-region{height:360px}
 	}
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
-	  header.main,
-	  header.main .rotate-default{height:440px}	
+	  .dimension:after{content:'max-width: 767px'}
+	  header.region.border-region{height:360px}
 	  
 	  /* Integrantes */
 	  #integrantes article{position:relative; padding-top:70px}
@@ -669,17 +663,17 @@ footer .btn.date:after{border-bottom-color:#4d0000}
 	  #integrantes article header{position:absolute; top:0; left:0}
 	  #integrantes article figure{margin-bottom:10px}
 	}
-
+	
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
-	  header.main,
-	  header.main .rotate-default{height:320px}		
+	  .dimension:after{content:'min-width: 480px, max-width: 767px'}
+	  header.region.border-region{height:300px}		
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
-	  header.main,
-	  header.main .rotate-default{height:240px}		
+	  .dimension:after{content:'max-width: 479px'}
+	  header.region.border-region{height:260px}	
 	}
 
 
