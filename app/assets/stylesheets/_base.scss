@@ -240,27 +240,27 @@ PAGES
 =============================================
 */
 
-#contactos.new section{}
+#contatos.new section{}
 section header,
 article header{width:100%; padding-bottom:15px; float:left; border-bottom:1px solid #ff0000}
 header h3{background:white; padding:5px 10px; margin-bottom:5px; color:black; position:relative; float:left; font-size:1.1em; text-transform:uppercase}
-#contactos.new section .inner{padding-top:100px}
-#contactos.new section .inner.form{text-align:center}
-#contactos.new section .inner form{float:none; display:inline-block}
-#contactos.new section .inner form .field{float:left; clear:left}
-#contactos.new section .inner form .field label{width:60px; margin-right:10px}
-#contactos.new section .inner form .field label,
-#contactos.new section .inner form .field input,
-#contactos.new section .inner form .field textarea{float:left}
-#contactos.new section .inner form .field input,
-#contactos.new section .inner form .field textarea{background:#b30000; border:0; color:white}
-#contactos.new section .inner form .field input:focus,
-#contactos.new section .inner form .field textarea:focus{background:#b3b3b3; color:black}
-#contactos.new section .inner form .field input,
-#contactos.new section .inner form .field textarea{width:200px}
-#contactos.new section .inner form .field textarea{height:92px}
-#contactos.new section .inner form .actions{width:280px; text-align:right}
-#contactos.new section .inner form .actions input{width:110px; height:45px; display:inline; border:0; text-indent:-99999px; cursor:pointer;
+#contatos.new section .inner{padding-top:100px}
+#contatos.new section .inner.form{text-align:center}
+#contatos.new section .inner form{float:none; display:inline-block}
+#contatos.new section .inner form .field{float:left; clear:left}
+#contatos.new section .inner form .field label{width:60px; margin-right:10px}
+#contatos.new section .inner form .field label,
+#contatos.new section .inner form .field input,
+#contatos.new section .inner form .field textarea{float:left}
+#contatos.new section .inner form .field input,
+#contatos.new section .inner form .field textarea{background:#b30000; border:0; color:white}
+#contatos.new section .inner form .field input:focus,
+#contatos.new section .inner form .field textarea:focus{background:#b3b3b3; color:black}
+#contatos.new section .inner form .field input,
+#contatos.new section .inner form .field textarea{width:200px}
+#contatos.new section .inner form .field textarea{height:92px}
+#contatos.new section .inner form .actions{width:280px; text-align:right}
+#contatos.new section .inner form .actions input{width:110px; height:45px; display:inline; border:0; text-indent:-99999px; cursor:pointer;
 background:url(../images/backgrounds/btn-enviar.png) no-repeat 0 0}
 
 
@@ -268,12 +268,12 @@ background:url(../images/backgrounds/btn-enviar.png) no-repeat 0 0}
 .column-message{width:50%; float:left}
 
 
-#contactos.new section .inner.datos-contacto h4{font-size:2.2em; font-weight:normal}
-#contactos.new section .inner.datos-contacto *{font-size:1.4em}
-#contactos.new section .inner.datos-contacto * *{font-size:inherit}
-#contactos.new section .inner.datos-contacto span{margin-bottom:30px; display:block; text-transform:uppercase}
-#contactos.new section .inner.datos-contacto p b.email-caracunde{font-weight:normal; display:block}
-#contactos.new section .inner.datos-contacto p b.email-caracunde:after{content:"@caracunde.com"}
+#contatos.new section .inner.datos-contacto h4{font-size:2.2em; font-weight:normal}
+#contatos.new section .inner.datos-contacto *{font-size:1.4em}
+#contatos.new section .inner.datos-contacto * *{font-size:inherit}
+#contatos.new section .inner.datos-contacto span{margin-bottom:30px; display:block; text-transform:uppercase}
+#contatos.new section .inner.datos-contacto p b.email-caracunde{font-weight:normal; display:block}
+#contatos.new section .inner.datos-contacto p b.email-caracunde:after{content:"@caracunde.com"}
 
 #integrantes article figure,
 #integrantes .figure{float:right}
@@ -444,7 +444,7 @@ DEFAULT BLOCKS
 .mtop-30{margin-top:150px}
 
 .mbottom-1{margin-bottom:5px}
-.mbottom-2, #contactos.new section .inner form .field input, .share-links-type, #contacts.index #content form .field textarea{margin-bottom:10px}
+.mbottom-2, #contatos.new section .inner form .field input, .share-links-type, #contacts.index #content form .field textarea{margin-bottom:10px}
 .mbottom-3, p{margin-bottom:15px}
 .mbottom-4, #albums.show .gallery-type li.columns, .not-front #content.region, #content-wrapper .block{margin-bottom:20px}
 .mbottom-5{margin-bottom:25px}
@@ -521,7 +521,7 @@ DEFAULT BLOCKS
 .pbottom-13{padding-bottom:65px}
 .pbottom-14{padding-bottom:70px}
 .pbottom-15{padding-bottom:75px}
-.pbottom-16, #contactos.new section{padding-bottom:80px}
+.pbottom-16, #contatos.new section{padding-bottom:80px}
 .pbottom-17{padding-bottom:85px}
 .pbottom-18{padding-bottom:90px}
 .pbottom-19{padding-bottom:95px}
