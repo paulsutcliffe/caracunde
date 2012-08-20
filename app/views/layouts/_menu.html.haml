@@ -19,9 +19,11 @@
       %li
         = link_to_unless_current 'Contato', new_contato_path do
           %span Contato
-      %li
-        = link_to_unless_current 'Auspicios', patrocinadores_path do
-          %span Auspicios
+      
+      - if current_usuario
+        %li
+          = link_to_unless_current 'Auspicios', patrocinadores_path do
+            %span Auspicios
     %ul.countries
       %li
         = link_to image_tag('/images/icons/ico-flag-per.png'), 'google.com'
