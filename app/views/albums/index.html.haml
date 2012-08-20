@@ -1,3 +1,23 @@
+#content.region.fancy.rotate-default
+  .container
+    %section.rotate-prevent
+      %h2.title.sixteen.columns.alpha
+        =t('albums.index.title')
+      
+      .sixteen.columns.alpha.gallery-type
+        %ul
+          - for album in @albums
+            %li.columns.seven{ :class => cycle(:odd, :even) }
+              %h3
+                = link_to album.nome, album
+              - unless album.fotos.empty?
+                = link_to image_tag(album.fotos.first.foto(:medium))
+      .sixteen.columns.alpha.pagination-type
+        = # will_paginate @albums
+
+
+
+
 %h1
   =t('albums.index.title')
 

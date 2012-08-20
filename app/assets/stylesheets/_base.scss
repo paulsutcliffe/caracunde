@@ -355,10 +355,10 @@ CONTENT TYPES
 .gallery-type li.columns{float:left; margin-right:90px}
 .gallery-type li.columns:nth-of-type(4n+4){margin-right:0}
 
-#albumes .gallery-type li.columns{float:left; padding-bottom:15px; margin:0 80px 0px 0; border-bottom:1px solid #ff0000}
-#albumes .gallery-type li.columns:nth-of-type(2n+2){margin-right:0}
-#albumes .gallery-type li.columns h3{margin-bottom:25px; position:relative}
-#albumes .gallery-type li.columns h3 a{font-size:0.6em; padding:0px 10px; display:block; text-transform:uppercase; background:white; color:black}
+#albums .gallery-type li.columns{float:left; padding-bottom:15px; margin:0 80px 0px 0; border-bottom:1px solid #ff0000}
+#albums .gallery-type li.columns:nth-of-type(2n+2){margin-right:0}
+#albums .gallery-type li.columns h3{margin-bottom:25px; position:relative}
+#albums .gallery-type li.columns h3 a{font-size:0.6em; padding:0px 10px; display:block; text-transform:uppercase; background:white; color:black}
 
 #videos .gallery-type li.columns{float:left; padding-bottom:15px; margin:0 80px 0px 0; border-bottom:1px solid #ff0000}
 #videos .gallery-type li.columns:nth-of-type(2n+2){margin-right:0}
@@ -423,7 +423,7 @@ DEFAULT BLOCKS
 .mtop-9{margin-top:45px}
 .mtop-10, #footer-bottom{margin-top:50px}
 .mtop-11{margin-top:55px}
-.mtop-12, #albumes.show .pagination-type{margin-top:60px}
+.mtop-12, #albums.show .pagination-type{margin-top:60px}
 .mtop-13{margin-top:65px}
 .mtop-14{margin-top:70px}
 .mtop-15{margin-top:75px}
@@ -446,7 +446,7 @@ DEFAULT BLOCKS
 .mbottom-1{margin-bottom:5px}
 .mbottom-2, #contactos.new section .inner form .field input, .share-links-type, #contacts.index #content form .field textarea{margin-bottom:10px}
 .mbottom-3, p{margin-bottom:15px}
-.mbottom-4, #albumes.show .gallery-type li.columns, .not-front #content.region, #content-wrapper .block{margin-bottom:20px}
+.mbottom-4, #albums.show .gallery-type li.columns, .not-front #content.region, #content-wrapper .block{margin-bottom:20px}
 .mbottom-5{margin-bottom:25px}
 .mbottom-6{margin-bottom:30px}
 .mbottom-7{margin-bottom:35px}
@@ -462,7 +462,7 @@ DEFAULT BLOCKS
 .mbottom-17{margin-bottom:85px}
 .mbottom-18{margin-bottom:90px}
 .mbottom-19{margin-bottom:95px}
-.mbottom-20, #albumes.index .gallery-type li.columns, #videos.index .gallery-type li.columns{margin-bottom:100px}
+.mbottom-20, #albums.index .gallery-type li.columns, #videos.index .gallery-type li.columns{margin-bottom:100px}
 .mbottom-21{margin-bottom:105px}
 .mbottom-22{margin-bottom:110px}
 .mbottom-23{margin-bottom:115px}
@@ -614,7 +614,7 @@ filter: progid:DXImageTransform.Microsoft.Matrix(
 M11=0.984807753012208, M12=0.17364817766693033, M21=-0.17364817766693033, M22=0.984807753012208, sizingMethod='auto expand');
 zoom: 1}
 
-#albumes .gallery-type li.columns h3:after,
+#albums .gallery-type li.columns h3:after,
 .share-links-type .inner:after,
 header h3:after,
 .top-date:after{content:""; display:block; width:0; height:0; border-width:15px; border-style:solid; 

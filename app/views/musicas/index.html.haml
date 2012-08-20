@@ -1,5 +1,22 @@
-%h1
-  =t('musicas.index.title')
+.region.fancy.rotate-default{:style => 'padding:0'}
+  .container
+#content.region
+  .container
+    %section
+      %h2.title.sixteen.columns.alpha
+        =t('musicas.index.title')
+      
+      .sixteen.columns.alpha.gallery-type.soundcloud
+        %ul
+          - for musica in @musicas
+            %li.columns.thirteen.offset-by-one
+              %iframe{:src => 'http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F54864119&show_artwork=true', :width => '100%', :height => '166', :scrolling => 'no', :frameborder => 'no'}
+      
+                
+
+
+
+  
 
 %table
   %thead

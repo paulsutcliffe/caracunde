@@ -1,3 +1,29 @@
+#content.region.fancy.rotate-default
+  .container
+    %section.rotate-prevent
+      %h2.title.sixteen.columns.alpha
+        =t('videos.index.title')
+      
+      .sixteen.columns.alpha.gallery-type
+        %ul
+          - for video in @videos
+            %li.columns.seven
+              .share-links-type.seven.columns.alpha
+                .inner
+                  %span.label Compartir en
+                  %ul
+                    %li.facebook
+                      %a
+                    %li.twitter
+                      %a
+              = video.link_html       
+              
+        .sixteen.columns.alpha.pagination-type
+          = will_paginate @videos
+      
+
+
+
 %h1 
   =t('videos.index.title')
 
