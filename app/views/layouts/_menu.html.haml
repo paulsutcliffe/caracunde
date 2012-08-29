@@ -23,9 +23,9 @@
             =t('musicas.index.title')
       %li
         = link_to_unless_current t('contato.index.title'), new_contato_path do
-          %span 
+          %span
             =t('contato.index.title')
-      
+
       - if current_usuario
         %li
           = link_to_unless_current t('patrocinador.index.title'), patrocinadores_path do
@@ -33,11 +33,11 @@
               t('patrocinador.index.title')
     %ul{:class => "#{I18n.locale }" + ' countries'}
       %li.peru
-        = link_to image_tag('/images/icons/ico-flag-per.png'), 'google.com'
+        = link_to image_tag('/images/icons/ico-flag-per.png'), url_for( :locale => 'es' )
       %li.usa
-        = link_to image_tag('/images/icons/ico-flag-usa.png'), 'google.com'
+        = link_to image_tag('/images/icons/ico-flag-usa.png'), url_for( :locale => 'en' )
       %li.brazil
-        = link_to image_tag('/images/icons/ico-flag-bra.png'), 'google.com'
-          
-          
+        = link_to image_tag('/images/icons/ico-flag-bra.png'), url_for( :locale => 'pt' )
+
+
 
