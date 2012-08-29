@@ -17,7 +17,7 @@
   .field
     = f.label :pais, "País"
     %br
-    = f.text_field :pais
+    = f.select(:pais, options_for_select( ['peru', 'argentina', 'ecuador', 'paraguay', 'uruguay' ] ))
   .field
     = f.label :retrato, "Foto"
     %br

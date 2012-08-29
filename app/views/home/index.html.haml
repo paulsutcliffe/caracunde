@@ -1,7 +1,7 @@
 %section#preface-bottom.region.border-region
   .container
     %h6.title.sixteen.columns.omega Noticias
-  
+
     - @posts.each do |post|
       %article.eight.columns
         %header
@@ -12,9 +12,9 @@
         %figure.four.columns.omega
           = link_to image_tag(post.imagen(:medium)), post
         %footer
-          = link_to 'Leer Artculo Completo', post, :class => 'btn read-more first'
+          = link_to t('posts.index.read_more'), post, :class => 'btn read-more first'
           %span.btn.date.last 03 julio
-      
+
 
 #content-inner.region
   .container
@@ -25,5 +25,3 @@
           = render 'caracunde_objetivo'
       %figure.eight.columns
         %iframe{:src => 'http://www.youtube.com/embed/WIOWaIkbk-k', :width => '420', :height => '315', :frameborder => '0'}
-            
-

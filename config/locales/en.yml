@@ -1,4 +1,79 @@
 en:
+  show: Show
+  edit: Edit
+  destroy: Delete
+  confirm_delete: Are you sure?
+  submit: Save
+  send: Submit
+  back: Back
+  albums:
+    index:
+      title: Albums
+  album:
+    new: New Album
+    edit:
+      title: Edit album
+  contatos:
+    index:
+      title: Contacts
+  contato:
+    index:
+      title: Contact
+    new: New Contact
+    edit:
+      title: Edit contact
+  fotos:
+    index:
+      title: Photos
+  foto:
+    new: New Photo
+    edit:
+      title: Edit photo
+  integrantes:
+    index:
+      title: Members
+  integrante:
+    new: New Member
+    edit:
+      title: Edit member
+  musicas:
+    index:
+      title: Music
+  musica:
+    new: New Music
+    edit:
+      title: Edit music
+  patrocinadores:
+    index:
+      title: Sponsors
+  patrocinador:
+    index:
+      title: Sponsor
+    new: New Sponsor
+    edit:
+      title: Edit sponsor
+  posts:
+    index:
+      title: News
+      read_more: Read more
+  post:
+    new: New Post
+    edit:
+      title: Edit post
+  slides:
+    index:
+      title: Slides
+  slide:
+    new: New Slide
+    edit:
+      title: Edit slide
+  videos:
+    index:
+      title: Videos
+  video:
+    new: New Video
+    edit:
+      title: Edit video
   date:
     abbr_day_names:
     - Sun
@@ -9,7 +84,7 @@ en:
     - Fri
     - Sat
     abbr_month_names:
-    - 
+    -
     - Jan
     - Feb
     - Mar
@@ -35,7 +110,7 @@ en:
       long: ! '%B %d, %Y'
       short: ! '%b %d'
     month_names:
-    - 
+    -
     - January
     - February
     - March

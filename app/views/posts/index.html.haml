@@ -16,7 +16,7 @@
         %figure.four.columns.omega
           = image_tag(post.imagen(:medium))
         %footer
-          = link_to 'Leer Artículo Completo', post, :class => 'btn read-more first'
+          = link_to t('posts.index.read_more'), post, :class => 'btn read-more first'
           %span.btn.date.last
             = post.data
           - if current_usuario

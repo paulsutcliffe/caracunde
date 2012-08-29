@@ -54,7 +54,8 @@ pt:
       title: Editar patrocinador
   posts:
     index:
-      title: Posts
+      title: Noticias
+      read_more: Ler o artigo completo
   post:
     new: Novo Post
     edit:

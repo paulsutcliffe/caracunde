@@ -1,7 +1,79 @@
 es:
+  show: Ver
+  edit: Editar
+  destroy: Eliminar
+  confirm_delete: ¿Estás seguro?
+  submit: Guardar
+  send: Enviar
+  back: Volver
   albums:
     index:
-      title: "Album"
+      title: Álbums
+  album:
+    new: Nuevo Álbum
+    edit:
+      title: Editar álbum
+  contatos:
+    index:
+      title: Contactos
+  contato:
+    index:
+      title: Contacto
+    new: Nuevo Contacto
+    edit:
+      title: Editar contacto
+  fotos:
+    index:
+      title: Fotos
+  foto:
+    new: Nueva Foto
+    edit:
+      title: Editar foto
+  integrantes:
+    index:
+      title: Integrantes
+  integrante:
+    new: Nuevo Integrante
+    edit:
+      title: Editar integrante
+  musicas:
+    index:
+      title: Música
+  musica:
+    new: Nueva Música
+    edit:
+      title: Editar música
+  patrocinadores:
+    index:
+      title: Patrocinadores
+  patrocinador:
+    index:
+      title: Patrocinador
+    new: Nuevo Patrocinador
+    edit:
+      title: Editar patrocinador
+  posts:
+    index:
+      title: Noticias
+      read_more: Leer el artículo completo
+  post:
+    new: Nuevo Post
+    edit:
+      title: Editar post
+  slides:
+    index:
+      title: Slides
+  slide:
+    new: Nuevo Slide
+    edit:
+      title: Editar slide
+  videos:
+    index:
+      title: Videos
+  video:
+    new: Nuevo Video
+    edit:
+      title: Editar video
   date:
     abbr_day_names:
     - dom

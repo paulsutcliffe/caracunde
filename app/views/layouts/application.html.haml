@@ -22,25 +22,25 @@
       #logo
         %h1#logo-wrapper.container
           %span Caracunde
-          = link_to image_tag("/images/logo.png"), 'google', :class => 'eight columns'
-              
+          = link_to image_tag("/images/logo.png"), root_path, :class => 'eight columns'
+
     #main
       #content.region.border-region
         = yield
-      
+
     #postscript-top.region.border-region.gallery-type
       .container.rotate-prevent
-        %h6.title.sixteen.columns.omega Auspiciadores
-        %ul   
+        %h6.title.sixteen.columns.omega= t('patrocinadores.index.title')
+        %ul
           - @patrocinadores.each do |patrocinador|
             %li.three.columns
               = link_to(image_tag(patrocinador.logo(:medium)), patrocinador.link)
-      
+
     %footer.main.region.fancy.rotate-default
       .container.rotate-prevent
         .five.columns
           %p
-            Brasil: (15) 91438743 
+            Brasil: (15) 91438743
             %br
             info@caracunde.com
         .six.columns.link-type
@@ -57,10 +57,10 @@
           %p#copyright.eight.columns.alpha
             Caracunde 2012, Todos los derechos reservados.
           %p#author.eight.columns.omega
-            web development and web design by 
+            web development and web design by
             = link_to 'kosmyka', 'http://www.kosmyka.com', :target => '_blank'
-    .dimension  
-      
+    .dimension
+
     #container
       - flash.each do |name, msg|
         = content_tag :div, msg, :id => "flash_#{name}"
@@ -70,12 +70,3 @@
 
       - @slides.each do |slide|
         = image_tag(slide.slide(:medium))
-
-      
-
-
-
-      
-   
-    
-      
