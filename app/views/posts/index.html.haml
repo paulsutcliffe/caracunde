@@ -5,7 +5,7 @@
     - if current_usuario
       #admin-links
         = link_to t('post.new'), new_post_path, :class => 'button add'
- 
+
     - for post in @posts
       %article.eight.columns{ :class => cycle(:odd, :even) }
         %header
@@ -16,10 +16,10 @@
         %figure.four.columns.omega
           = image_tag(post.imagen(:medium))
         %footer
-          = link_to 'Leer Artculo Completo', post, :class => 'btn read-more first'
+          = link_to 'Leer Artículo Completo', post, :class => 'btn read-more first'
           %span.btn.date.last
             = post.data
-
-
-
-
+          - if current_usuario
+            .admin-links
+              = link_to t('edit'), edit_post_path(post)
+              = link_to t('destroy'), post, :confirm => I18n.t('confirm_delete'), :method => :delete

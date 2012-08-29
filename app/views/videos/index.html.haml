@@ -4,7 +4,7 @@
       =t('videos.index.title')
     - if current_usuario
       .admin-links
-        = link_to 'Crear', new_video_path, :class => 'button new'
+        = link_to t('video.new'), new_video_path, :class => 'button new'
     .sixteen.columns.alpha.gallery-type
       %ul
         - for video in @videos
@@ -14,16 +14,14 @@
                 %span.label Compartir en
                 %ul
                   %li.facebook
-                    = link_to '', "http://www.facebook.com/sharer.php?u=#{ request.protocol + request.host_with_port + video_path(video) }", :target => '_blank'
+                    = link_to '', "http://www.facebook.com/sharer.php?u=#{request.protocol + request.host_with_port + video_path(video)}", :target => '_blank'
                   %li.twitter
-                    = link_to '', "http://www.twitter.com/home?status=#{ request.protocol + request.host_with_port + video_path(video) }", :target => '_blank'
-            = video.link_html       
-              
+                    = link_to '', "http://www.twitter.com/home?status=#{request.protocol + request.host_with_port + video_path(video)}", :target => '_blank'
+            = video.link_html
+            - if current_usuario
+              .admin-links
+                = link_to t('edit'), edit_video_path(video), :class => 'button edit'
+                = link_to t('destroy'), video, :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button delete'
+
       .sixteen.columns.alpha.pagination-type
         = will_paginate @videos
-        - if current_usuario
-          .admin-links
-            = link_to t('edit'), edit_video_path(video), :class => 'button edit'
-            = link_to t('destroy'), video, :confirm => I18n.t('confirm_delete'), :method => :delete, :class => 'button delete'
-
-      
