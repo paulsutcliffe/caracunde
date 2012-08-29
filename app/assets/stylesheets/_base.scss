@@ -166,8 +166,11 @@ header.main .menu li span{color:white; padding:12px 13px 14px; float:left; text-
 header.main .menu li a:hover,
 header.main .menu li span{color:#ff0000}
 header.main .menu ul.countries{margin:8px 0 0 0; float:right; padding-right:10px}
-header.main .menu ul.countries li a{padding:2px 4px; opacity:0.7}
-header.main .menu ul.countries li a:hover{opacity:1}
+header.main .menu ul.countries li a{padding:2px 4px; opacity:0.5}
+header.main .menu ul.countries li a:hover,
+header.main .menu ul.countries.es li.peru a,
+header.main .menu ul.countries.en li.usa a,
+header.main .menu ul.countries.pt li.brazil a{opacity:1}
 #main-menu{position:relative; z-index:200}
 
 header.main .flex-direction-nav{z-index:400; position:absolute; top:100px; left:0}
@@ -209,7 +212,8 @@ REGIONS
 */
 
 div.region{width:100%; background: black}
-.front #content{background:#ff0000}
+.front #content,
+.front #content-inner{background:#ff0000}
 .region.fancy{border-color:white; border-width:40px 0 0px; border-style:solid }
 
 
@@ -244,10 +248,10 @@ header h3{background:white; padding:5px 10px; margin-bottom:5px; color:black; po
 #contatos.new section .inner.form{text-align:center}
 #contatos.new section .inner form{float:none; display:inline-block}
 #contatos.new section .inner form .field{float:left; clear:left}
-#contatos.new section .inner form .field label{width:60px; margin-right:10px}
+#contatos.new section .inner form .field label{width:80px; margin-right:10px}
 #contatos.new section .inner form .field label,
 #contatos.new section .inner form .field input,
-#contatos.new section .inner form .field textarea{float:left}
+#contatos.new section .inner form .field textarea{float:left; font-size:14px; font-family:'Capriola'}
 #contatos.new section .inner form .field input,
 #contatos.new section .inner form .field textarea{background:#b30000; border:0; color:white}
 #contatos.new section .inner form .field input:focus,
@@ -255,7 +259,7 @@ header h3{background:white; padding:5px 10px; margin-bottom:5px; color:black; po
 #contatos.new section .inner form .field input,
 #contatos.new section .inner form .field textarea{width:200px}
 #contatos.new section .inner form .field textarea{height:92px}
-#contatos.new section .inner form .actions{width:280px; text-align:right}
+#contatos.new section .inner form .actions{width:300px; text-align:right}
 #contatos.new section .inner form .actions input{width:110px; height:45px; display:inline; border:0; text-indent:-99999px; cursor:pointer;
 background:url(../images/backgrounds/btn-enviar.png) no-repeat 0 0}
 
@@ -351,16 +355,22 @@ CONTENT TYPES
 .gallery-type li.columns{float:left; margin-right:90px}
 .gallery-type li.columns:nth-of-type(4n+4){margin-right:0}
 
-#albums #content .gallery-type li.columns{float:left; padding-bottom:15px; margin:0 80px 0px 0; border-bottom:1px solid #ff0000}
+#albums #content .gallery-type li.columns{float:left; padding-bottom:15px; margin:0 20px 0px 0; border-bottom:1px solid #ff0000}
 #albums #content .gallery-type li.columns:nth-of-type(2n+2){margin-right:0}
 #albums #content .gallery-type li.columns h3{margin-bottom:25px; position:relative}
 #albums #content .gallery-type li.columns h3 a{font-size:0.6em; padding:0px 10px; display:block; text-transform:uppercase; background:white; color:black}
 
-#videos #content .gallery-type li.columns{float:left; padding-bottom:15px; margin:0 80px 0px 0; border-bottom:1px solid #ff0000}
+#videos #content .gallery-type li.columns{float:left; padding-bottom:15px; margin:0 20px 0px 0; border-bottom:1px solid #ff0000}
 #videos #content .gallery-type li.columns:nth-of-type(2n+2){margin-right:0}
 #videos #content .gallery-type li.columns h3{margin-bottom:25px; position:relative}
 #videos #content .gallery-type li.columns h3 a{font-size:0.6em; padding:0px 10px; display:block; text-transform:uppercase; background:white; color:black}
 #videos #content .share-links-type{border:0}
+#albums #content .gallery-type li.columns:nth-last-child(1),
+#albums #content .gallery-type li.columns:nth-last-child(2),
+#videos #content .gallery-type li.columns:nth-last-child(1),
+#videos #content .gallery-type li.columns:nth-last-child(2){border:0}
+
+a.button{color:black}
 
 /* div.video-type ul
 ================================================== */
@@ -386,7 +396,7 @@ CONTENT TYPES
 
 /* div.pagination-type ul
 ================================================== */
-.pagination-type{border-top:1px solid #ff0000}
+.pagination-type{border-top:1px solid #ff0000; margin-top:5px}
 .pagination-type ul{float:left; text-align:left}
 .pagination-type ul li{display:inline; margin-right:10px}
 .pagination-type ul li a{text-transform:uppercase; font-size:1.2em}
@@ -651,6 +661,9 @@ footer .btn.date:after{border-bottom-color:#4d0000}
 	@media only screen and (min-width: 768px) and (max-width: 959px) {
 	  .dimension:after{content:'min-width: 768px, max-width: 959px'}
 	   header.region.border-region{height:360px}
+           #contatos.new section .inner form .actions{width:210px}
+           #contatos.new label{text-align:left}
+           #contatos.new section .inner.datos-contacto h4{font-size:1.9em}
 	}
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
@@ -662,6 +675,7 @@ footer .btn.date:after{border-bottom-color:#4d0000}
 	  #integrantes.show article{padding-top:20px}
 	  #integrantes article header{position:absolute; top:0; left:0}
 	  #integrantes article figure{margin-bottom:10px}
+          #contatos.new section .inner form .actions{width:200px}
 	}
 	
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */

@@ -2,7 +2,10 @@
   %section.rotate-prevent
     %h6.title.sixteen.columns.alpha
       =t('posts.index.title')
-      
+    - if current_usuario
+      #admin-links
+        = link_to t('post.new'), new_post_path, :class => 'button add'
+ 
     - for post in @posts
       %article.eight.columns{ :class => cycle(:odd, :even) }
         %header
@@ -13,35 +16,10 @@
         %figure.four.columns.omega
           = image_tag(post.imagen(:medium))
         %footer
-          = link_to 'Leer Art’culo Completo', post, :class => 'btn read-more first'
+          = link_to 'Leer ArtÂ’culo Completo', post, :class => 'btn read-more first'
           %span.btn.date.last
             = post.data
 
-%h1 
-  =t('posts.index.title')
 
-%table
-  %thead
-    %tr
-      %th 
-        =t('activerecord.attributes.post.titulo')
-      %th 
-        =t('activerecord.attributes.post.conteudo')
-      %th 
-        =t('activerecord.attributes.post.data')
-      %th{ :colspan => 3 }
-  
-  %tbody
-    - for post in @posts
-      %tr{ :class => cycle(:odd, :even) }
-        %td= post.titulo
-        %td= post.conteudo
-        %td= post.data
-        %td= link_to t('show'), post
-        %td= link_to t('edit'), edit_post_path(post)
-        %td= link_to t('destroy'), post, :confirm => I18n.t('confirm_delete'), :method => :delete
-
-%br
-= link_to t('post.new'), new_post_path
 
 

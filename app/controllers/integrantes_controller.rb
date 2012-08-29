@@ -1,4 +1,5 @@
 class IntegrantesController < InheritedResources::Base
+  before_filter :authenticate_usuario!, :except => [:index, :show]
   def create
     create!(:notice => "Integrante criado corretamente")
   end

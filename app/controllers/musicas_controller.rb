@@ -1,4 +1,5 @@
 class MusicasController < InheritedResources::Base
+  before_filter :authenticate_usuario!, :except => [:index]
   def create
     create!(:notice => "Musica criada corretamente")
   end

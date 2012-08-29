@@ -1,4 +1,5 @@
 class PatrocinadoresController < InheritedResources::Base
+  before_filter :authenticate_usuario!
   def create
     create!(:notice => "Patrocinador criado corretamente")
   end

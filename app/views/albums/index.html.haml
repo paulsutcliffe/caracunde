@@ -2,39 +2,23 @@
   %section.rotate-prevent
     %h2.title.sixteen.columns.alpha
       =t('albums.index.title')
-      
+    - if current_usuario
+      .admin-links
+        = link_to t('album.new'), new_album_path, :class => 'button add' 
     .sixteen.columns.alpha.gallery-type
       %ul
         - for album in @albums
-          %li.columns.seven{ :class => cycle(:odd, :even) }
+          %li.columns.eight{ :class => cycle(:odd, :even) }
             %h3
               = link_to album.nome, album
             - unless album.fotos.empty?
               = link_to image_tag(album.fotos.first.foto(:medium))
+              - if current_usuario
+                .admin-links
+                  = link_to t('edit'), edit_album_path(album)
+                  = link_to t('destroy'), album, :confirm => I18n.t('confirm_delete'), :method => :delete
     .sixteen.columns.alpha.pagination-type
       = # will_paginate @albums
 
 
 
-
-%h1
-  =t('albums.index.title')
-
-%table
-  %thead
-    %tr
-      %th
-        =t('activerecord.attributes.album.nome')
-      %th{ :colspan => 3 }
-
-  %tbody
-    - for album in @albums
-      %tr{ :class => cycle(:odd, :even) }
-        %td= link_to album.nome, album
-        - unless album.fotos.empty?
-          %td= image_tag album.fotos.first.foto(:medium)
-        %td= link_to t('edit'), edit_album_path(album)
-        %td= link_to t('destroy'), album, :confirm => I18n.t('confirm_delete'), :method => :delete
-
-%br
-= link_to t('album.new'), new_album_path

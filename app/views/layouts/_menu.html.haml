@@ -2,32 +2,42 @@
   %nav.fifteen.columns
     %ul
       %li
-        = link_to_unless_current 'Noticias', posts_path do
-          %span Noticias
+        = link_to_unless_current t('posts.index.title'), posts_path do
+          %span
+            =t('posts.index.title')
       %li
-        = link_to_unless_current 'Integrantes', integrantes_path do
-          %span Integrantes
+        = link_to_unless_current t('integrantes.index.title'), integrantes_path do
+          %span
+            =t('integrantes.index.title')
       %li
-        = link_to_unless_current 'Videos', videos_path do
-          %span Videos
+        = link_to_unless_current t('videos.index.title'), videos_path do
+          %span
+            =t('videos.index.title')
       %li
-        = link_to_unless_current 'Fotos', albums_path do
-          %span Fotos
+        = link_to_unless_current t('fotos.index.title'), albums_path do
+          %span
+            =t('fotos.index.title')
       %li
-        = link_to_unless_current 'Mœsicas', musicas_path do
-          %span Mœsicas
+        = link_to_unless_current t('musicas.index.title'), musicas_path do
+          %span
+            =t('musicas.index.title')
       %li
-        = link_to_unless_current 'Contato', new_contato_path do
-          %span Contato
+        = link_to_unless_current t('contato.index.title'), new_contato_path do
+          %span 
+            =t('contato.index.title')
       
       - if current_usuario
         %li
-          = link_to_unless_current 'Auspicios', patrocinadores_path do
-            %span Auspicios
-    %ul.countries
-      %li
+          = link_to_unless_current t('patrocinador.index.title'), patrocinadores_path do
+            %span
+              t('patrocinador.index.title')
+    %ul{:class => "#{I18n.locale }" + ' countries'}
+      %li.peru
         = link_to image_tag('/images/icons/ico-flag-per.png'), 'google.com'
+      %li.usa
         = link_to image_tag('/images/icons/ico-flag-usa.png'), 'google.com'
+      %li.brazil
         = link_to image_tag('/images/icons/ico-flag-bra.png'), 'google.com'
           
           
+

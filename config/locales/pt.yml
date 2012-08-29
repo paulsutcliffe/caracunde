@@ -17,6 +17,8 @@ pt:
     index:
       title: Contatos
   contato:
+    index:
+      title: Contato
     new: Novo Contato
     edit:
       title: Editar contato
@@ -45,6 +47,8 @@ pt:
     index:
       title: Patrocinadores
   patrocinador:
+    index:
+      title: Patrocinador
     new: Novo Patrocinador
     edit:
       title: Editar patrocinador

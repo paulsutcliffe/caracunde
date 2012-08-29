@@ -1,24 +1,21 @@
-#content.region.fancy.rotate-default
+#content.region
   .container
-    %section.rotate-prevent
+    %section
       %h2.title.sixteen.columns.alpha
         = @integrante.nome
       
       .share-links-type.eight.columns.alpha.omega
         .inner
-          %span.label Compartir en
-          %ul
-            %li.facebook
-              = link_to '', 'google.com'
-            %li.twitter
-              = link_to '', 'google.com'
+          = render 'shared/social_links'        
       .sixteen.columns.alpha
         .figure.inner.eight.columns.omega
           = image_tag(@integrante.retrato(:medium))
         %div
           = @integrante.pais
           = sanitize(@integrante.descricao, :tags => %w(p i br b))
-        .sixteen.columns.alpha Facebook Chat
+        .sixteen.columns.alpha
+          #facebook-comments
+            = render 'shared/facebook_comments'
         .footer
           = link_to t('back'), integrantes_path, :class => 'link back'
           = if current_usuario
@@ -28,16 +25,3 @@
 
 
 
-
-%p
-  %strong t('activerecord.attributes.integrante.nome')
-  = @integrante.nome
-%p
-  %strong t('activerecord.attributes.integrante.descricao')
-  = @integrante.descricao
-%p
-  %strong t('activerecord.attributes.integrante.pais')
-  = @integrante.pais
-%p
-  = image_tag(@integrante.retrato(:medium))
-== #{ link_to t('edit'), edit_integrante_path(@integrante) } | #{ link_to t('back'), integrantes_path }

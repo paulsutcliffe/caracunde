@@ -1,4 +1,5 @@
 class SlidesController < InheritedResources::Base
+  before_filter :authenticate_usuario!
   def create
     create!(:notice => "Slide criado corretamente")
   end

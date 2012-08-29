@@ -1,4 +1,4 @@
-= form_for(@contato, :html => {:class => 'ten columns'}) do |f|
+= form_for(@contato, :html => {:class => 'twelve columns'}) do |f|
 
   - if @contato.errors.any?
     #errorExplanation
@@ -6,7 +6,7 @@
       %ul
       - @contato.errors.full_messages.each do |msg|
         %li= msg
-  .five.columns.alpha
+  .six.columns.alpha
     .field
       = f.label :nome
       = f.text_field :nome
@@ -16,9 +16,10 @@
     .field
       = f.label :telefone
       = f.text_field :telefone
-  .five.columns.omega
+  .six.columns.omega
     .field
       = f.label :mensagem
       = f.text_area :mensagem
     .actions
       = f.submit I18n.t('send')
+

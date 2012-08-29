@@ -1,16 +1,11 @@
-#content.region.fancy.rotate-default
+#content.region
   .container
-    %section.rotate-prevent
+    %section
       %h6.title.sixteen.columns.alpha
         = @post.titulo
       .share-links-type.eight.columns.alpha.omega
         .inner
-          %span.label Compartir en
-          %ul
-            %li.facebook
-              %a
-            %li.twitter.last
-              %a
+          = render 'shared/social_links'          
       .sixteen.columns.alpha
         %span.top-date.btn
           = @post.data
@@ -18,25 +13,11 @@
           = image_tag(@post.imagen(:full))
         %div
           = sanitize(simple_format(@post.conteudo), :tags => %w(p i br b))
-        .sixteen.columns.alpha Facebook chat
+        .sixteen.columns.alpha
+          #facebook-comments
+            = render 'shared/facebook_comments'
         .footer
-          = link_to 'Atr‡s', posts_path, :class => 'link back'
-            
-            
-            
-
-%section#preface-bottom.container.region
-  %h6.title.sixteen.columns.omega Noticias
-
-%p
-  %strong t('activerecord.attributes.post.titulo')
-  = @post.titulo
-%p
-  %strong t('activerecord.attributes.post.conteudo')
-  = @post.conteudo
-%p
-  %strong t('activerecord.attributes.post.data')
-  = @post.data
-%p
-  = image_tag(@post.imagen(:medium))
-== #{ link_to t('edit'), edit_post_path(@post) } | #{ link_to t('back'), posts_path }
+          = link_to t('back'), posts_path, :class => 'link back'
+          - if current_usuario
+            = link_to t('edit'), edit_post_path(@post), :class => 'button edit'
+          

@@ -1,5 +1,5 @@
 class VideosController < InheritedResources::Base
-  
+  before_filter :authenticate_usuario!, :except => [:index]  
   def index
     @videos = Video.paginate(:page => params[:page], :per_page => 6)
   end
