@@ -36,6 +36,7 @@ gem "nifty-generators"
 gem "auto_html"
 gem "page_title_helper"
 gem "sitemap_generator"
+gem "globalize3"
 
 group :test do
   gem 'cucumber-rails'

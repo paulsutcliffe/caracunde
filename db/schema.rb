@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120815223014) do
+ActiveRecord::Schema.define(:version => 20120829233911) do
 
   create_table "albums", :force => true do |t|
     t.string   "nome"
@@ -39,6 +39,18 @@ ActiveRecord::Schema.define(:version => 20120815223014) do
     t.integer  "foto_file_size"
     t.datetime "foto_updated_at"
   end
+
+  create_table "integrante_translations", :force => true do |t|
+    t.integer  "integrante_id"
+    t.string   "locale"
+    t.text     "descricao"
+    t.string   "nome"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "integrante_translations", ["integrante_id"], :name => "index_integrante_translations_on_integrante_id"
+  add_index "integrante_translations", ["locale"], :name => "index_integrante_translations_on_locale"
 
   create_table "integrantes", :force => true do |t|
     t.string   "nome"
@@ -70,6 +82,18 @@ ActiveRecord::Schema.define(:version => 20120815223014) do
     t.integer  "logo_file_size"
     t.datetime "logo_updated_at"
   end
+
+  create_table "post_translations", :force => true do |t|
+    t.integer  "post_id"
+    t.string   "locale"
+    t.string   "titulo"
+    t.text     "conteudo"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "post_translations", ["locale"], :name => "index_post_translations_on_locale"
+  add_index "post_translations", ["post_id"], :name => "index_post_translations_on_post_id"
 
   create_table "posts", :force => true do |t|
     t.string   "titulo"
