@@ -1,8 +1,6 @@
 class AlbumsController < InheritedResources::Base
- before_filter :authenticate_usuario!, :except => [:index] 
- # def index
-   # @albums = Albums.paginate(:page => params[:page], :per_page => 6)
-  #end
+  before_filter :authenticate_usuario!, :except => [:index]
+
   def create
     create!(:notice => "Album criado corretamente")
   end

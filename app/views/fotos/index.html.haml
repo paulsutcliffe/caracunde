@@ -1,13 +1,13 @@
-%h1 
+%h1
   =t('fotos.index.title')
 
 %table
   %thead
     %tr
-      %th 
+      %th
         =t('activerecord.attributes.foto.album_id')
       %th{ :colspan => 3 }
-  
+
   %tbody
     - for foto in @fotos
       %tr{ :class => cycle(:odd, :even) }

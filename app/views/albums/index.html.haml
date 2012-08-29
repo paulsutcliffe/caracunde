@@ -12,7 +12,7 @@
             %h3
               = link_to album.nome, album
             - unless album.fotos.empty?
-              = link_to image_tag(album.fotos.first.foto(:medium))
+              = link_to image_tag(album.fotos.first.foto(:medium)), album
             - if current_usuario
               .admin-links
                 = link_to t('edit'), edit_album_path(album)
