@@ -1,18 +1,16 @@
-#content.region
+#content-inner.region
   .container
     %section
       %h2.title.sixteen.columns.alpha
-        = @integrante.nome
+        =  image_tag('/images/icons/' + @integrante.pais + '.png') + ' ' + @integrante.nome
       
       .share-links-type.eight.columns.alpha.omega
         .inner
           = render 'shared/social_links'        
       .sixteen.columns.alpha
         .figure.inner.eight.columns.omega
-          = image_tag(@integrante.retrato(:medium))
-        %div
-          = @integrante.pais
-          = sanitize(@integrante.descricao, :tags => %w(p i br b))
+          = image_tag(@integrante.retrato(:medium))          
+        = sanitize(simple_format(@integrante.descricao), :tags => %w(p i br b))
         .sixteen.columns.alpha
           #facebook-comments
             = render 'shared/facebook_comments'

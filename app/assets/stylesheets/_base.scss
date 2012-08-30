@@ -140,9 +140,13 @@ h1.title,
 h2.title,
 h6.title{text-transform:uppercase; font-size:2em; line-height:1em; text-align:right}
 
+h1.title img,
+h2.title img{width:auto; position:relative; top:-7px; margin-right:5px}
+
 /* Bodytext
 ================================================== */
 p, div, span, li, dt, dt{font-family:'Capriola'}
+p{text-align:justify}
 
 /* 
 ================================================== 
@@ -215,7 +219,10 @@ div.region{width:100%; background: black}
 .front #content,
 .front #content-inner{background:#ff0000}
 .region.fancy{border-color:white; border-width:40px 0 0px; border-style:solid }
+#content-inner.region{padding:0}
 
+#facebook-comments .fb-comments,
+#facebook-comments .fb-comments *{width:100% !important}
 
 
 /*
@@ -229,7 +236,7 @@ article h2{font-size:1.2em; border-bottom:1px solid #ff0000; text-transform: upp
 .btn.read-more{background:#4d4d4d}
 .btn.date{background:#4d0000; text-align:right}
 article footer,
-.footer{width:100%; padding:20px 0; border-top:1px solid #ff0000; float:left; margin-top:10px}
+.footer{width:100%; padding:20px 0 0; border-top:1px solid #ff0000; float:left; margin-top:10px}
 article footer .first{float:left}
 article footer .last{float:right}
 
@@ -276,7 +283,7 @@ background:url(../images/backgrounds/btn-enviar.png) no-repeat 0 0}
 #contatos.new section .inner.datos-contacto p b.email-caracunde:after{content:"@caracunde.com"}
 
 #integrantes article figure,
-#integrantes .figure{float:right}
+#integrantes .figure{float:right; position:relative; top:-11px}
 #integrantes article footer{padding-top:15px}
 #integrantes article footer .btn{float:left; background:#4d4d4d; position:relative}
 #integrantes article footer .btn:after{content:""; width:0; height:0; position:absolute; bottom:98%; left:20px;
@@ -293,8 +300,9 @@ border-color:transparent transparent #4d4d4d transparent; border-style:solid; bo
 #posts .top-date{position:absolute; top:-70px; right:0; background:#4d0000; text-align:right}
 #posts .sixteen{position:relative}
 #posts.show article figure,
-#posts.show .figure{float:right}
-footer .btn{position:relative}
+#posts.show .figure{float:right; position:relative; top:-10px}
+footer .btn{position:relative; text-transform:uppercase}
+.footer a.link{text-transform:uppercase}
 
 /*
 =============================================
@@ -356,6 +364,7 @@ CONTENT TYPES
 .gallery-type li.columns:nth-of-type(4n+4){margin-right:0}
 
 #albums #content .gallery-type li.columns{float:left; padding-bottom:15px; margin:0 20px 0px 0; border-bottom:1px solid #ff0000}
+#albums.show #content .gallery-type li.columns{ margin:0 140px 0px 0}
 #albums #content .gallery-type li.columns:nth-of-type(2n+2){margin-right:0}
 #albums #content .gallery-type li.columns h3{margin-bottom:25px; position:relative}
 #albums #content .gallery-type li.columns h3 a{font-size:0.6em; padding:0px 10px; display:block; text-transform:uppercase; background:white; color:black}
@@ -379,17 +388,17 @@ a.button{color:black}
 /* div.video-type ul
 ================================================== */
 .share-links-type{padding-bottom:20px; border-bottom:1px solid #ff0000}
-
-.share-links-type .inner{padding:5px; position:relative}
-.share-links-type .label{margin:5px 10px 0 0; display:block}
+.share-links-type .inner{padding:5px 5px 4px; position:relative}
+.share-links-type .label{margin:2px 10px 0 8px; display:block; text-transform:uppercase}
 .share-links-type .inner,
-.share-links-type .label{background:white; color:black}
+.share-links-type .label{background:white; color:black; font-size:0.95em; text-transform:uppercase}
 
 .share-links-type .label,
 .share-links-type .inner,
 .share-links-type ul{float:left}
 .share-links-type ul li{margin:0 10px 0 0; float:left}
-.share-links-type ul li.last{margin-right:0}
+.share-links-type ul li.last,
+.share-links-type ul li.twitter{margin-right:3px}
 .share-links-type ul li a{width:20px; height:25px; display:block; background:url(../images/icons/share-links.png) no-repeat 0 0}
 .share-links-type ul li.facebook a{background-position:0 -3px}
 .share-links-type ul li.twitter a{width:27px; background-position:-27px -3px}
@@ -452,7 +461,7 @@ DEFAULT BLOCKS
 .mbottom-1{margin-bottom:5px}
 .mbottom-2, #contatos.new section .inner form .field input, .share-links-type, #contacts.index #content form .field textarea{margin-bottom:10px}
 .mbottom-3, p{margin-bottom:15px}
-.mbottom-4, #albums.show .gallery-type li.columns, .not-front #content.region, #content-wrapper .block{margin-bottom:20px}
+.mbottom-4, #albums.show .gallery-type li.columns, #content-wrapper .block{margin-bottom:20px}
 .mbottom-5{margin-bottom:25px}
 .mbottom-6{margin-bottom:30px}
 .mbottom-7{margin-bottom:35px}
@@ -489,7 +498,7 @@ DEFAULT BLOCKS
 .ptop-7, .pagination-type{padding-top:35px}
 .ptop-8{padding-top:40px}
 .ptop-9{padding-top:45px}
-.ptop-10{padding-top:50px}
+.ptop-10, #facebook-comments{padding-top:50px}
 .ptop-11{padding-top:55px}
 .ptop-12{padding-top:60px}
 .ptop-13{padding-top:65px}
@@ -517,7 +526,7 @@ DEFAULT BLOCKS
 .pbottom-3{padding-bottom:15px}
 .pbottom-4{padding-bottom:20px}
 .pbottom-5{padding-bottom:25px}
-.pbottom-6{padding-bottom:30px}
+.pbottom-6, #facebook-comments{padding-bottom:30px}
 .pbottom-7{padding-bottom:35px}
 .pbottom-8{padding-bottom:40px}
 .pbottom-9{padding-bottom:45px}
@@ -623,13 +632,13 @@ zoom: 1}
 #albums #content .gallery-type li.columns h3:after,
 .share-links-type .inner:after,
 header h3:after,
-.top-date:after{content:""; display:block; width:0; height:0; border-width:15px; border-style:solid; 
+.top-date:after{content:""; display:block; width:0; height:0; border-width:10px; border-style:solid; 
 border-color:white transparent transparent transparent; 
 position:absolute; top:100%; left:25px}
 .share-links-type .inner:after{visibility:visible}
 
 
-footer .btn:after{content:""; display:block; width:0; height:0; border-width:15px; border-style:solid; 
+footer .btn:after{content:""; display:block; width:0; height:0; border-width:10px; border-style:solid; 
 border-color:transparent transparent white transparent;
 position:absolute; bottom:98%; left:25px}
 

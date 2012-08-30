@@ -1,14 +1,33 @@
-%p
-  = @album.nome
+.container
+  %section
+    %h2.title.sixteen.columns.alpha
+      = @album.nome
+    
+    - if current_usuario
+      .admin-links
+        = link_to 'Adicionar Foto', new_album_foto_path(@album), :class => 'button add'
+       
+    .share-links-type.sixteen.columns.alpha
+      .inner
+        = render 'shared/social_links'
+    .sixteen.columns.alpha.gallery-type
+      - if @album.fotos.empty?
+        %p
+          Album vazio
+      - else
+        %ul
+          - @album.fotos.each do |foto|
+            %li.columns.seven{ :class => cycle(:odd, :even) }
+              = image_tag(foto.foto(:medium))     
+              - if current_usuario
+                .admin-links
+                  = link_to t('destroy'), { :controller => 'fotos', :action => 'destroy', :id => foto.id, :album_id => @album.id }, :confirm => I18n.t('confirm_delete'), :method => :delete
+       
+    .sixteen.columns.alpha.pagination-type
+      = # will_paginate @albums
+      - if current_usuario
+        #{ link_to t('back'), albums_path, :class => 'button back' }
+      == #{ link_to t('edit'), edit_album_path(@album) }
 
-= link_to 'Adicionar Foto', new_album_foto_path(@album)
 
-- if @album.fotos.empty?
-  %p
-    Album vazio
-- else
-  - @album.fotos.each do |foto|
-    = image_tag(foto.foto(:medium))
-    = link_to t('destroy'), { :controller => 'fotos', :action => 'destroy', :id => foto.id, :album_id => @album.id }, :confirm => I18n.t('confirm_delete'), :method => :delete
 
-== #{ link_to t('edit'), edit_album_path(@album) } | #{ link_to t('back'), albums_path }

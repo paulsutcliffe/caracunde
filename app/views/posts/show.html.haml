@@ -1,4 +1,4 @@
-#content.region
+#content-inner.region
   .container
     %section
       %h6.title.sixteen.columns.alpha
@@ -9,9 +9,9 @@
       .sixteen.columns.alpha
         %span.top-date.btn
           = @post.data
-        .figure.inner.eight.columns.omega
+        .figure.inner.eight.columns.alpha.omega
           = image_tag(@post.imagen(:full))
-        %div
+        .eight.columns.alpha.omega
           = sanitize(simple_format(@post.conteudo), :tags => %w(p i br b))
         .sixteen.columns.alpha
           #facebook-comments

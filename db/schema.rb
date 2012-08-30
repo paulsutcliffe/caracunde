@@ -43,8 +43,8 @@ ActiveRecord::Schema.define(:version => 20120829233911) do
   create_table "integrante_translations", :force => true do |t|
     t.integer  "integrante_id"
     t.string   "locale"
-    t.text     "descricao"
     t.string   "nome"
+    t.text     "descricao"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
