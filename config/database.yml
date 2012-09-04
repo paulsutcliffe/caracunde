@@ -34,9 +34,9 @@ production:
   reconnect: false
   database: caracunde_production
   pool: 5
-  host:
-  username:
-  password:
+  host: mysql.avance.kosmyka.com
+  username: caracundedb
+  password: chimpance99
 
 cucumber:
   <<: *test
