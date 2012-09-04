@@ -7,5 +7,6 @@ ActiveSupport::Inflector.inflections do |inflect|
 #   inflect.singular /^(ox)en/i, '\1'
   inflect.irregular 'patrocinador', 'patrocinadores'
   inflect.irregular 'descricao', 'descricoes'
+  inflect.irregular 'informacao', 'informacoes'
 #   inflect.uncountable %w( fish sheep )
 end

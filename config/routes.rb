@@ -1,5 +1,7 @@
 Caracunde::Application.routes.draw do
 
+  resources :informacoes
+
   scope '(:locale)', :locale => /#{I18n.available_locales.join("|")}/ do
 
     resources :slides, :videos, :patrocinadores, :musicas, :integrantes, :posts, :contatos, :fotos
