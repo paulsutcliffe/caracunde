@@ -8,9 +8,6 @@ set :applicationdir, "/home/#{user}/#{application}"  # The standard Dreamhost se
 set :repository,  "git@github.com:paulsutcliffe/caracunde.git"
 default_run_options[:pty] = true
 
-default_environment['PATH']='/usr/lib/ruby/gems/1.8/bin:/home/railscaracunde/.gems/bin:/usr/local/bin:/usr/bin:/bin'
-default_environment['GEM_PATH']='/home/railscaracunde/.gems:/usr/lib/ruby/gems/1.8'
-
 ssh_options[:forward_agent] = true
 set :git_enable_submodules, 1
 set :scm, :git
