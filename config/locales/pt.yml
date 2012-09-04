@@ -1,4 +1,6 @@
 pt:
+  ap:
+    name: Caracunde
   show: Olhar
   edit: Editar
   destroy: Apagar
