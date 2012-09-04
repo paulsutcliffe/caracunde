@@ -47,6 +47,10 @@ pt:
   informacoes:
     index:
       title: Informacoes
+  informacao:
+    new: Adicionar Informação
+    edit:
+      title: Editar Informação
   patrocinadores:
     index:
       title: Patrocinadores
@@ -332,4 +336,4 @@ pt:
         descricao: Descrição
         frases_chave: Frases Chave
         video: Video
-        
+
