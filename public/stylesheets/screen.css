@@ -1359,30 +1359,48 @@ a.button {
   color: black;
 }
 
+/* line 385, ../../app/assets/stylesheets/_base.scss */
+#alert-top {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  background: green;
+}
+
+/* line 387, ../../app/assets/stylesheets/_base.scss */
+#alert-top #flash_alert,
+#alert-top #flash_notice {
+  top: auto;
+  padding: 10px 0;
+  color: white;
+}
+
 /* div.video-type ul
 ================================================== */
 /* div.video-type ul
 ================================================== */
-/* line 390, ../../app/assets/stylesheets/_base.scss */
+/* line 396, ../../app/assets/stylesheets/_base.scss */
 .share-links-type {
   padding-bottom: 20px;
   border-bottom: 1px solid #ff0000;
 }
 
-/* line 391, ../../app/assets/stylesheets/_base.scss */
+/* line 397, ../../app/assets/stylesheets/_base.scss */
 .share-links-type .inner {
   padding: 5px 5px 4px;
   position: relative;
 }
 
-/* line 392, ../../app/assets/stylesheets/_base.scss */
+/* line 398, ../../app/assets/stylesheets/_base.scss */
 .share-links-type .label {
   margin: 2px 10px 0 8px;
   display: block;
   text-transform: uppercase;
 }
 
-/* line 394, ../../app/assets/stylesheets/_base.scss */
+/* line 400, ../../app/assets/stylesheets/_base.scss */
 .share-links-type .inner,
 .share-links-type .label {
   background: white;
@@ -1391,26 +1409,26 @@ a.button {
   text-transform: uppercase;
 }
 
-/* line 398, ../../app/assets/stylesheets/_base.scss */
+/* line 404, ../../app/assets/stylesheets/_base.scss */
 .share-links-type .label,
 .share-links-type .inner,
 .share-links-type ul {
   float: left;
 }
 
-/* line 399, ../../app/assets/stylesheets/_base.scss */
+/* line 405, ../../app/assets/stylesheets/_base.scss */
 .share-links-type ul li {
   margin: 0 10px 0 0;
   float: left;
 }
 
-/* line 401, ../../app/assets/stylesheets/_base.scss */
+/* line 407, ../../app/assets/stylesheets/_base.scss */
 .share-links-type ul li.last,
 .share-links-type ul li.twitter {
   margin-right: 3px;
 }
 
-/* line 402, ../../app/assets/stylesheets/_base.scss */
+/* line 408, ../../app/assets/stylesheets/_base.scss */
 .share-links-type ul li a {
   width: 20px;
   height: 25px;
@@ -1418,12 +1436,12 @@ a.button {
   background: url(../images/icons/share-links.png) no-repeat 0 0;
 }
 
-/* line 403, ../../app/assets/stylesheets/_base.scss */
+/* line 409, ../../app/assets/stylesheets/_base.scss */
 .share-links-type ul li.facebook a {
   background-position: 0 -3px;
 }
 
-/* line 404, ../../app/assets/stylesheets/_base.scss */
+/* line 410, ../../app/assets/stylesheets/_base.scss */
 .share-links-type ul li.twitter a {
   width: 27px;
   background-position: -27px -3px;
@@ -1431,31 +1449,31 @@ a.button {
 
 /* div.pagination-type ul
 ================================================== */
-/* line 408, ../../app/assets/stylesheets/_base.scss */
+/* line 414, ../../app/assets/stylesheets/_base.scss */
 .pagination-type {
   border-top: 1px solid #ff0000;
   margin-top: 5px;
 }
 
-/* line 409, ../../app/assets/stylesheets/_base.scss */
+/* line 415, ../../app/assets/stylesheets/_base.scss */
 .pagination-type ul {
   float: left;
   text-align: left;
 }
 
-/* line 410, ../../app/assets/stylesheets/_base.scss */
+/* line 416, ../../app/assets/stylesheets/_base.scss */
 .pagination-type ul li {
   display: inline;
   margin-right: 10px;
 }
 
-/* line 411, ../../app/assets/stylesheets/_base.scss */
+/* line 417, ../../app/assets/stylesheets/_base.scss */
 .pagination-type ul li a {
   text-transform: uppercase;
   font-size: 1.2em;
 }
 
-/* line 412, ../../app/assets/stylesheets/_base.scss */
+/* line 418, ../../app/assets/stylesheets/_base.scss */
 .pagination-type .btn.back {
   min-width: 100px;
   height: 30px;
@@ -1468,7 +1486,7 @@ a.button {
   position: relative;
 }
 
-/* line 413, ../../app/assets/stylesheets/_base.scss */
+/* line 419, ../../app/assets/stylesheets/_base.scss */
 .pagination-type .btn.back:after {
   content: "";
   width: 0;
@@ -1486,623 +1504,623 @@ a.button {
 DEFAULT BLOCKS
 ==================================================
 */
-/* line 423, ../../app/assets/stylesheets/_base.scss */
+/* line 429, ../../app/assets/stylesheets/_base.scss */
 .block {
   width: 100%;
   float: left;
 }
 
-/* line 427, ../../app/assets/stylesheets/_base.scss */
+/* line 433, ../../app/assets/stylesheets/_base.scss */
 .block .inner {
   margin: 0 10px;
 }
 
-/* line 430, ../../app/assets/stylesheets/_base.scss */
+/* line 436, ../../app/assets/stylesheets/_base.scss */
 .mtop-1 {
   margin-top: 5px;
 }
 
-/* line 431, ../../app/assets/stylesheets/_base.scss */
+/* line 437, ../../app/assets/stylesheets/_base.scss */
 .mtop-2 {
   margin-top: 10px;
 }
 
-/* line 432, ../../app/assets/stylesheets/_base.scss */
+/* line 438, ../../app/assets/stylesheets/_base.scss */
 .mtop-3 {
   margin-top: 15px;
 }
 
-/* line 433, ../../app/assets/stylesheets/_base.scss */
+/* line 439, ../../app/assets/stylesheets/_base.scss */
 .mtop-4 {
   margin-top: 20px;
 }
 
-/* line 434, ../../app/assets/stylesheets/_base.scss */
+/* line 440, ../../app/assets/stylesheets/_base.scss */
 .mtop-5 {
   margin-top: 25px;
 }
 
-/* line 435, ../../app/assets/stylesheets/_base.scss */
+/* line 441, ../../app/assets/stylesheets/_base.scss */
 .mtop-6 {
   margin-top: 30px;
 }
 
-/* line 436, ../../app/assets/stylesheets/_base.scss */
+/* line 442, ../../app/assets/stylesheets/_base.scss */
 .mtop-7 {
   margin-top: 35px;
 }
 
-/* line 437, ../../app/assets/stylesheets/_base.scss */
+/* line 443, ../../app/assets/stylesheets/_base.scss */
 .mtop-8 {
   margin-top: 40px;
 }
 
-/* line 438, ../../app/assets/stylesheets/_base.scss */
+/* line 444, ../../app/assets/stylesheets/_base.scss */
 .mtop-9 {
   margin-top: 45px;
 }
 
-/* line 439, ../../app/assets/stylesheets/_base.scss */
+/* line 445, ../../app/assets/stylesheets/_base.scss */
 .mtop-10, #footer-bottom {
   margin-top: 50px;
 }
 
-/* line 440, ../../app/assets/stylesheets/_base.scss */
+/* line 446, ../../app/assets/stylesheets/_base.scss */
 .mtop-11 {
   margin-top: 55px;
 }
 
-/* line 441, ../../app/assets/stylesheets/_base.scss */
+/* line 447, ../../app/assets/stylesheets/_base.scss */
 .mtop-12, #albums.show .pagination-type {
   margin-top: 60px;
 }
 
-/* line 442, ../../app/assets/stylesheets/_base.scss */
+/* line 448, ../../app/assets/stylesheets/_base.scss */
 .mtop-13 {
   margin-top: 65px;
 }
 
-/* line 443, ../../app/assets/stylesheets/_base.scss */
+/* line 449, ../../app/assets/stylesheets/_base.scss */
 .mtop-14 {
   margin-top: 70px;
 }
 
-/* line 444, ../../app/assets/stylesheets/_base.scss */
+/* line 450, ../../app/assets/stylesheets/_base.scss */
 .mtop-15 {
   margin-top: 75px;
 }
 
-/* line 445, ../../app/assets/stylesheets/_base.scss */
+/* line 451, ../../app/assets/stylesheets/_base.scss */
 .mtop-16 {
   margin-top: 80px;
 }
 
-/* line 446, ../../app/assets/stylesheets/_base.scss */
+/* line 452, ../../app/assets/stylesheets/_base.scss */
 .mtop-17 {
   margin-top: 85px;
 }
 
-/* line 447, ../../app/assets/stylesheets/_base.scss */
+/* line 453, ../../app/assets/stylesheets/_base.scss */
 .mtop-18 {
   margin-top: 90px;
 }
 
-/* line 448, ../../app/assets/stylesheets/_base.scss */
+/* line 454, ../../app/assets/stylesheets/_base.scss */
 .mtop-19 {
   margin-top: 95px;
 }
 
-/* line 449, ../../app/assets/stylesheets/_base.scss */
+/* line 455, ../../app/assets/stylesheets/_base.scss */
 .mtop-20 {
   margin-top: 100px;
 }
 
-/* line 450, ../../app/assets/stylesheets/_base.scss */
+/* line 456, ../../app/assets/stylesheets/_base.scss */
 .mtop-21 {
   margin-top: 105px;
 }
 
-/* line 451, ../../app/assets/stylesheets/_base.scss */
+/* line 457, ../../app/assets/stylesheets/_base.scss */
 .mtop-22 {
   margin-top: 110px;
 }
 
-/* line 452, ../../app/assets/stylesheets/_base.scss */
+/* line 458, ../../app/assets/stylesheets/_base.scss */
 .mtop-23 {
   margin-top: 115px;
 }
 
-/* line 453, ../../app/assets/stylesheets/_base.scss */
+/* line 459, ../../app/assets/stylesheets/_base.scss */
 .mtop-24 {
   margin-top: 120px;
 }
 
-/* line 454, ../../app/assets/stylesheets/_base.scss */
+/* line 460, ../../app/assets/stylesheets/_base.scss */
 .mtop-25 {
   margin-top: 125px;
 }
 
-/* line 455, ../../app/assets/stylesheets/_base.scss */
+/* line 461, ../../app/assets/stylesheets/_base.scss */
 .mtop-26 {
   margin-top: 130px;
 }
 
-/* line 456, ../../app/assets/stylesheets/_base.scss */
+/* line 462, ../../app/assets/stylesheets/_base.scss */
 .mtop-27 {
   margin-top: 135px;
 }
 
-/* line 457, ../../app/assets/stylesheets/_base.scss */
+/* line 463, ../../app/assets/stylesheets/_base.scss */
 .mtop-28 {
   margin-top: 140px;
 }
 
-/* line 458, ../../app/assets/stylesheets/_base.scss */
+/* line 464, ../../app/assets/stylesheets/_base.scss */
 .mtop-29 {
   margin-top: 145px;
 }
 
-/* line 459, ../../app/assets/stylesheets/_base.scss */
+/* line 465, ../../app/assets/stylesheets/_base.scss */
 .mtop-30 {
   margin-top: 150px;
 }
 
-/* line 461, ../../app/assets/stylesheets/_base.scss */
+/* line 467, ../../app/assets/stylesheets/_base.scss */
 .mbottom-1 {
   margin-bottom: 5px;
 }
 
-/* line 462, ../../app/assets/stylesheets/_base.scss */
+/* line 468, ../../app/assets/stylesheets/_base.scss */
 .mbottom-2, #contatos.new section .inner form .field input, .share-links-type, #contacts.index #content form .field textarea {
   margin-bottom: 10px;
 }
 
-/* line 463, ../../app/assets/stylesheets/_base.scss */
+/* line 469, ../../app/assets/stylesheets/_base.scss */
 .mbottom-3, p {
   margin-bottom: 15px;
 }
 
-/* line 464, ../../app/assets/stylesheets/_base.scss */
+/* line 470, ../../app/assets/stylesheets/_base.scss */
 .mbottom-4, #albums.show .gallery-type li.columns, #content-wrapper .block {
   margin-bottom: 20px;
 }
 
-/* line 465, ../../app/assets/stylesheets/_base.scss */
+/* line 471, ../../app/assets/stylesheets/_base.scss */
 .mbottom-5 {
   margin-bottom: 25px;
 }
 
-/* line 466, ../../app/assets/stylesheets/_base.scss */
+/* line 472, ../../app/assets/stylesheets/_base.scss */
 .mbottom-6 {
   margin-bottom: 30px;
 }
 
-/* line 467, ../../app/assets/stylesheets/_base.scss */
+/* line 473, ../../app/assets/stylesheets/_base.scss */
 .mbottom-7 {
   margin-bottom: 35px;
 }
 
-/* line 468, ../../app/assets/stylesheets/_base.scss */
+/* line 474, ../../app/assets/stylesheets/_base.scss */
 .mbottom-8, .gallery-type.soundcloud li {
   margin-bottom: 40px;
 }
 
-/* line 469, ../../app/assets/stylesheets/_base.scss */
+/* line 475, ../../app/assets/stylesheets/_base.scss */
 .mbottom-9 {
   margin-bottom: 45px;
 }
 
-/* line 470, ../../app/assets/stylesheets/_base.scss */
+/* line 476, ../../app/assets/stylesheets/_base.scss */
 .mbottom-10, #integrantes article {
   margin-bottom: 50px;
 }
 
-/* line 471, ../../app/assets/stylesheets/_base.scss */
+/* line 477, ../../app/assets/stylesheets/_base.scss */
 .mbottom-11 {
   margin-bottom: 55px;
 }
 
-/* line 472, ../../app/assets/stylesheets/_base.scss */
+/* line 478, ../../app/assets/stylesheets/_base.scss */
 .mbottom-12 {
   margin-bottom: 60px;
 }
 
-/* line 473, ../../app/assets/stylesheets/_base.scss */
+/* line 479, ../../app/assets/stylesheets/_base.scss */
 .mbottom-13 {
   margin-bottom: 65px;
 }
 
-/* line 474, ../../app/assets/stylesheets/_base.scss */
+/* line 480, ../../app/assets/stylesheets/_base.scss */
 .mbottom-14 {
   margin-bottom: 70px;
 }
 
-/* line 475, ../../app/assets/stylesheets/_base.scss */
+/* line 481, ../../app/assets/stylesheets/_base.scss */
 .mbottom-15 {
   margin-bottom: 75px;
 }
 
-/* line 476, ../../app/assets/stylesheets/_base.scss */
+/* line 482, ../../app/assets/stylesheets/_base.scss */
 .mbottom-16 {
   margin-bottom: 80px;
 }
 
-/* line 477, ../../app/assets/stylesheets/_base.scss */
+/* line 483, ../../app/assets/stylesheets/_base.scss */
 .mbottom-17 {
   margin-bottom: 85px;
 }
 
-/* line 478, ../../app/assets/stylesheets/_base.scss */
+/* line 484, ../../app/assets/stylesheets/_base.scss */
 .mbottom-18 {
   margin-bottom: 90px;
 }
 
-/* line 479, ../../app/assets/stylesheets/_base.scss */
+/* line 485, ../../app/assets/stylesheets/_base.scss */
 .mbottom-19 {
   margin-bottom: 95px;
 }
 
-/* line 480, ../../app/assets/stylesheets/_base.scss */
+/* line 486, ../../app/assets/stylesheets/_base.scss */
 .mbottom-20, #albums.index .gallery-type li.columns, #videos.index .gallery-type li.columns {
   margin-bottom: 100px;
 }
 
-/* line 481, ../../app/assets/stylesheets/_base.scss */
+/* line 487, ../../app/assets/stylesheets/_base.scss */
 .mbottom-21 {
   margin-bottom: 105px;
 }
 
-/* line 482, ../../app/assets/stylesheets/_base.scss */
+/* line 488, ../../app/assets/stylesheets/_base.scss */
 .mbottom-22 {
   margin-bottom: 110px;
 }
 
-/* line 483, ../../app/assets/stylesheets/_base.scss */
+/* line 489, ../../app/assets/stylesheets/_base.scss */
 .mbottom-23 {
   margin-bottom: 115px;
 }
 
-/* line 484, ../../app/assets/stylesheets/_base.scss */
+/* line 490, ../../app/assets/stylesheets/_base.scss */
 .mbottom-24 {
   margin-bottom: 120px;
 }
 
-/* line 485, ../../app/assets/stylesheets/_base.scss */
+/* line 491, ../../app/assets/stylesheets/_base.scss */
 .mbottom-25 {
   margin-bottom: 125px;
 }
 
-/* line 486, ../../app/assets/stylesheets/_base.scss */
+/* line 492, ../../app/assets/stylesheets/_base.scss */
 .mbottom-26 {
   margin-bottom: 130px;
 }
 
-/* line 487, ../../app/assets/stylesheets/_base.scss */
+/* line 493, ../../app/assets/stylesheets/_base.scss */
 .mbottom-27 {
   margin-bottom: 135px;
 }
 
-/* line 488, ../../app/assets/stylesheets/_base.scss */
+/* line 494, ../../app/assets/stylesheets/_base.scss */
 .mbottom-28 {
   margin-bottom: 140px;
 }
 
-/* line 489, ../../app/assets/stylesheets/_base.scss */
+/* line 495, ../../app/assets/stylesheets/_base.scss */
 .mbottom-29 {
   margin-bottom: 145px;
 }
 
-/* line 490, ../../app/assets/stylesheets/_base.scss */
+/* line 496, ../../app/assets/stylesheets/_base.scss */
 .mbottom-30 {
   margin-bottom: 150px;
 }
 
-/* line 492, ../../app/assets/stylesheets/_base.scss */
+/* line 498, ../../app/assets/stylesheets/_base.scss */
 .ptop-1 {
   padding-top: 5px;
 }
 
-/* line 493, ../../app/assets/stylesheets/_base.scss */
+/* line 499, ../../app/assets/stylesheets/_base.scss */
 .ptop-2, .share-links-type, #footer-bottom {
   padding-top: 10px;
 }
 
-/* line 494, ../../app/assets/stylesheets/_base.scss */
+/* line 500, ../../app/assets/stylesheets/_base.scss */
 .ptop-3 {
   padding-top: 15px;
 }
 
-/* line 495, ../../app/assets/stylesheets/_base.scss */
+/* line 501, ../../app/assets/stylesheets/_base.scss */
 .ptop-4 {
   padding-top: 20px;
 }
 
-/* line 496, ../../app/assets/stylesheets/_base.scss */
+/* line 502, ../../app/assets/stylesheets/_base.scss */
 .ptop-5 {
   padding-top: 25px;
 }
 
-/* line 497, ../../app/assets/stylesheets/_base.scss */
+/* line 503, ../../app/assets/stylesheets/_base.scss */
 .ptop-6 {
   padding-top: 30px;
 }
 
-/* line 498, ../../app/assets/stylesheets/_base.scss */
+/* line 504, ../../app/assets/stylesheets/_base.scss */
 .ptop-7, .pagination-type {
   padding-top: 35px;
 }
 
-/* line 499, ../../app/assets/stylesheets/_base.scss */
+/* line 505, ../../app/assets/stylesheets/_base.scss */
 .ptop-8 {
   padding-top: 40px;
 }
 
-/* line 500, ../../app/assets/stylesheets/_base.scss */
+/* line 506, ../../app/assets/stylesheets/_base.scss */
 .ptop-9 {
   padding-top: 45px;
 }
 
-/* line 501, ../../app/assets/stylesheets/_base.scss */
+/* line 507, ../../app/assets/stylesheets/_base.scss */
 .ptop-10, #facebook-comments {
   padding-top: 50px;
 }
 
-/* line 502, ../../app/assets/stylesheets/_base.scss */
+/* line 508, ../../app/assets/stylesheets/_base.scss */
 .ptop-11 {
   padding-top: 55px;
 }
 
-/* line 503, ../../app/assets/stylesheets/_base.scss */
+/* line 509, ../../app/assets/stylesheets/_base.scss */
 .ptop-12 {
   padding-top: 60px;
 }
 
-/* line 504, ../../app/assets/stylesheets/_base.scss */
+/* line 510, ../../app/assets/stylesheets/_base.scss */
 .ptop-13 {
   padding-top: 65px;
 }
 
-/* line 505, ../../app/assets/stylesheets/_base.scss */
+/* line 511, ../../app/assets/stylesheets/_base.scss */
 .ptop-14 {
   padding-top: 70px;
 }
 
-/* line 506, ../../app/assets/stylesheets/_base.scss */
+/* line 512, ../../app/assets/stylesheets/_base.scss */
 .ptop-15 {
   padding-top: 75px;
 }
 
-/* line 507, ../../app/assets/stylesheets/_base.scss */
+/* line 513, ../../app/assets/stylesheets/_base.scss */
 .ptop-16 {
   padding-top: 80px;
 }
 
-/* line 508, ../../app/assets/stylesheets/_base.scss */
+/* line 514, ../../app/assets/stylesheets/_base.scss */
 .ptop-17 {
   padding-top: 85px;
 }
 
-/* line 509, ../../app/assets/stylesheets/_base.scss */
+/* line 515, ../../app/assets/stylesheets/_base.scss */
 .ptop-18 {
   padding-top: 90px;
 }
 
-/* line 510, ../../app/assets/stylesheets/_base.scss */
+/* line 516, ../../app/assets/stylesheets/_base.scss */
 .ptop-19 {
   padding-top: 95px;
 }
 
-/* line 511, ../../app/assets/stylesheets/_base.scss */
+/* line 517, ../../app/assets/stylesheets/_base.scss */
 .ptop-20 {
   padding-top: 100px;
 }
 
-/* line 512, ../../app/assets/stylesheets/_base.scss */
+/* line 518, ../../app/assets/stylesheets/_base.scss */
 .ptop-21 {
   padding-top: 105px;
 }
 
-/* line 513, ../../app/assets/stylesheets/_base.scss */
+/* line 519, ../../app/assets/stylesheets/_base.scss */
 .ptop-22 {
   padding-top: 110px;
 }
 
-/* line 514, ../../app/assets/stylesheets/_base.scss */
+/* line 520, ../../app/assets/stylesheets/_base.scss */
 .ptop-23 {
   padding-top: 115px;
 }
 
-/* line 515, ../../app/assets/stylesheets/_base.scss */
+/* line 521, ../../app/assets/stylesheets/_base.scss */
 .ptop-24 {
   padding-top: 120px;
 }
 
-/* line 516, ../../app/assets/stylesheets/_base.scss */
+/* line 522, ../../app/assets/stylesheets/_base.scss */
 .ptop-25 {
   padding-top: 125px;
 }
 
-/* line 517, ../../app/assets/stylesheets/_base.scss */
+/* line 523, ../../app/assets/stylesheets/_base.scss */
 .ptop-26 {
   padding-top: 130px;
 }
 
-/* line 518, ../../app/assets/stylesheets/_base.scss */
+/* line 524, ../../app/assets/stylesheets/_base.scss */
 .ptop-27 {
   padding-top: 135px;
 }
 
-/* line 519, ../../app/assets/stylesheets/_base.scss */
+/* line 525, ../../app/assets/stylesheets/_base.scss */
 .ptop-28 {
   padding-top: 140px;
 }
 
-/* line 520, ../../app/assets/stylesheets/_base.scss */
+/* line 526, ../../app/assets/stylesheets/_base.scss */
 .ptop-29 {
   padding-top: 145px;
 }
 
-/* line 521, ../../app/assets/stylesheets/_base.scss */
+/* line 527, ../../app/assets/stylesheets/_base.scss */
 .ptop-30 {
   padding-top: 150px;
 }
 
-/* line 523, ../../app/assets/stylesheets/_base.scss */
+/* line 529, ../../app/assets/stylesheets/_base.scss */
 .pbottom-0 {
   padding-bottom: 0;
 }
 
-/* line 524, ../../app/assets/stylesheets/_base.scss */
+/* line 530, ../../app/assets/stylesheets/_base.scss */
 .pbottom-1 {
   padding-bottom: 5px;
 }
 
-/* line 525, ../../app/assets/stylesheets/_base.scss */
+/* line 531, ../../app/assets/stylesheets/_base.scss */
 .pbottom-2, footer.main {
   padding-bottom: 10px;
 }
 
-/* line 526, ../../app/assets/stylesheets/_base.scss */
+/* line 532, ../../app/assets/stylesheets/_base.scss */
 .pbottom-3 {
   padding-bottom: 15px;
 }
 
-/* line 527, ../../app/assets/stylesheets/_base.scss */
+/* line 533, ../../app/assets/stylesheets/_base.scss */
 .pbottom-4 {
   padding-bottom: 20px;
 }
 
-/* line 528, ../../app/assets/stylesheets/_base.scss */
+/* line 534, ../../app/assets/stylesheets/_base.scss */
 .pbottom-5 {
   padding-bottom: 25px;
 }
 
-/* line 529, ../../app/assets/stylesheets/_base.scss */
+/* line 535, ../../app/assets/stylesheets/_base.scss */
 .pbottom-6, #facebook-comments {
   padding-bottom: 30px;
 }
 
-/* line 530, ../../app/assets/stylesheets/_base.scss */
+/* line 536, ../../app/assets/stylesheets/_base.scss */
 .pbottom-7 {
   padding-bottom: 35px;
 }
 
-/* line 531, ../../app/assets/stylesheets/_base.scss */
+/* line 537, ../../app/assets/stylesheets/_base.scss */
 .pbottom-8 {
   padding-bottom: 40px;
 }
 
-/* line 532, ../../app/assets/stylesheets/_base.scss */
+/* line 538, ../../app/assets/stylesheets/_base.scss */
 .pbottom-9 {
   padding-bottom: 45px;
 }
 
-/* line 533, ../../app/assets/stylesheets/_base.scss */
+/* line 539, ../../app/assets/stylesheets/_base.scss */
 .pbottom-10 {
   padding-bottom: 50px;
 }
 
-/* line 534, ../../app/assets/stylesheets/_base.scss */
+/* line 540, ../../app/assets/stylesheets/_base.scss */
 .pbottom-11 {
   padding-bottom: 55px;
 }
 
-/* line 535, ../../app/assets/stylesheets/_base.scss */
+/* line 541, ../../app/assets/stylesheets/_base.scss */
 .pbottom-12, h1.title, h2.title, h6.title, .region {
   padding-bottom: 60px;
 }
 
-/* line 536, ../../app/assets/stylesheets/_base.scss */
+/* line 542, ../../app/assets/stylesheets/_base.scss */
 .pbottom-13 {
   padding-bottom: 65px;
 }
 
-/* line 537, ../../app/assets/stylesheets/_base.scss */
+/* line 543, ../../app/assets/stylesheets/_base.scss */
 .pbottom-14 {
   padding-bottom: 70px;
 }
 
-/* line 538, ../../app/assets/stylesheets/_base.scss */
+/* line 544, ../../app/assets/stylesheets/_base.scss */
 .pbottom-15 {
   padding-bottom: 75px;
 }
 
-/* line 539, ../../app/assets/stylesheets/_base.scss */
+/* line 545, ../../app/assets/stylesheets/_base.scss */
 .pbottom-16, #contatos.new section {
   padding-bottom: 80px;
 }
 
-/* line 540, ../../app/assets/stylesheets/_base.scss */
+/* line 546, ../../app/assets/stylesheets/_base.scss */
 .pbottom-17 {
   padding-bottom: 85px;
 }
 
-/* line 541, ../../app/assets/stylesheets/_base.scss */
+/* line 547, ../../app/assets/stylesheets/_base.scss */
 .pbottom-18 {
   padding-bottom: 90px;
 }
 
-/* line 542, ../../app/assets/stylesheets/_base.scss */
+/* line 548, ../../app/assets/stylesheets/_base.scss */
 .pbottom-19 {
   padding-bottom: 95px;
 }
 
-/* line 543, ../../app/assets/stylesheets/_base.scss */
+/* line 549, ../../app/assets/stylesheets/_base.scss */
 .pbottom-20 {
   padding-bottom: 100px;
 }
 
-/* line 544, ../../app/assets/stylesheets/_base.scss */
+/* line 550, ../../app/assets/stylesheets/_base.scss */
 .pbottom-21 {
   padding-bottom: 105px;
 }
 
-/* line 545, ../../app/assets/stylesheets/_base.scss */
+/* line 551, ../../app/assets/stylesheets/_base.scss */
 .pbottom-22 {
   padding-bottom: 110px;
 }
 
-/* line 546, ../../app/assets/stylesheets/_base.scss */
+/* line 552, ../../app/assets/stylesheets/_base.scss */
 .pbottom-23 {
   padding-bottom: 115px;
 }
 
-/* line 547, ../../app/assets/stylesheets/_base.scss */
+/* line 553, ../../app/assets/stylesheets/_base.scss */
 .pbottom-24 {
   padding-bottom: 120px;
 }
 
-/* line 548, ../../app/assets/stylesheets/_base.scss */
+/* line 554, ../../app/assets/stylesheets/_base.scss */
 .pbottom-25 {
   padding-bottom: 125px;
 }
 
-/* line 549, ../../app/assets/stylesheets/_base.scss */
+/* line 555, ../../app/assets/stylesheets/_base.scss */
 .pbottom-26 {
   padding-bottom: 130px;
 }
 
-/* line 550, ../../app/assets/stylesheets/_base.scss */
+/* line 556, ../../app/assets/stylesheets/_base.scss */
 .pbottom-27 {
   padding-bottom: 135px;
 }
 
-/* line 551, ../../app/assets/stylesheets/_base.scss */
+/* line 557, ../../app/assets/stylesheets/_base.scss */
 .pbottom-28 {
   padding-bottom: 140px;
 }
 
-/* line 552, ../../app/assets/stylesheets/_base.scss */
+/* line 558, ../../app/assets/stylesheets/_base.scss */
 .pbottom-29 {
   padding-bottom: 145px;
 }
 
-/* line 553, ../../app/assets/stylesheets/_base.scss */
+/* line 559, ../../app/assets/stylesheets/_base.scss */
 .pbottom-30 {
   padding-bottom: 150px;
 }
 
-/* line 555, ../../app/assets/stylesheets/_base.scss */
+/* line 561, ../../app/assets/stylesheets/_base.scss */
 .centered {
   margin: 0 auto;
   display: block;
@@ -2115,7 +2133,7 @@ DEFAULT BLOCKS
 CLEAR FLOATS
 =============================================
 */
-/* line 570, ../../app/assets/stylesheets/_base.scss */
+/* line 576, ../../app/assets/stylesheets/_base.scss */
 #menu:after,
 #main:after,
 #main #sidebar-first:after,
@@ -2129,7 +2147,7 @@ CLEAR FLOATS
   height: 0;
 }
 
-/* line 581, ../../app/assets/stylesheets/_base.scss */
+/* line 587, ../../app/assets/stylesheets/_base.scss */
 #menu,
 #main,
 #main #sidebar-first,
@@ -2143,7 +2161,7 @@ CLEAR FLOATS
 X fancy (borders, radius, shadows,...)
 =============================================
 */
-/* line 594, ../../app/assets/stylesheets/_base.scss */
+/* line 600, ../../app/assets/stylesheets/_base.scss */
 .radius-1,
 .block .inner .content {
   -moz-border-radius: 5px;
@@ -2153,7 +2171,7 @@ X fancy (borders, radius, shadows,...)
   border-radius: 5px;
 }
 
-/* line 597, ../../app/assets/stylesheets/_base.scss */
+/* line 603, ../../app/assets/stylesheets/_base.scss */
 .radius-2,
 #block-receta .inner,
 .list-type li {
@@ -2164,7 +2182,7 @@ X fancy (borders, radius, shadows,...)
   border-radius: 10px;
 }
 
-/* line 598, ../../app/assets/stylesheets/_base.scss */
+/* line 604, ../../app/assets/stylesheets/_base.scss */
 .radius-3 {
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
@@ -2173,7 +2191,7 @@ X fancy (borders, radius, shadows,...)
   border-radius: 15px;
 }
 
-/* line 599, ../../app/assets/stylesheets/_base.scss */
+/* line 605, ../../app/assets/stylesheets/_base.scss */
 .radius-4 {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -2182,7 +2200,7 @@ X fancy (borders, radius, shadows,...)
   border-radius: 20px;
 }
 
-/* line 600, ../../app/assets/stylesheets/_base.scss */
+/* line 606, ../../app/assets/stylesheets/_base.scss */
 .radius-5 {
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
@@ -2191,7 +2209,7 @@ X fancy (borders, radius, shadows,...)
   border-radius: 25px;
 }
 
-/* line 601, ../../app/assets/stylesheets/_base.scss */
+/* line 607, ../../app/assets/stylesheets/_base.scss */
 .radius-6 {
   -moz-border-radius: 30px;
   -webkit-border-radius: 30px;
@@ -2201,25 +2219,25 @@ X fancy (borders, radius, shadows,...)
 }
 
 /* default color #1 (#bcbec0) */
-/* line 604, ../../app/assets/stylesheets/_base.scss */
+/* line 610, ../../app/assets/stylesheets/_base.scss */
 #null {
   border: 5px solid #bcbec0;
 }
 
 /* default color #2 (#6dcff6) */
-/* line 607, ../../app/assets/stylesheets/_base.scss */
+/* line 613, ../../app/assets/stylesheets/_base.scss */
 #null {
   border: 0px solid #6dcff6;
 }
 
-/* line 611, ../../app/assets/stylesheets/_base.scss */
+/* line 617, ../../app/assets/stylesheets/_base.scss */
 #block-receta .inner,
 .list-type li,
 .tab h2.title {
   border: 2px solid #1b6f7e;
 }
 
-/* line 613, ../../app/assets/stylesheets/_base.scss */
+/* line 619, ../../app/assets/stylesheets/_base.scss */
 #null {
   -moz-transition: none;
   /* FF3.7+ */
@@ -2230,7 +2248,7 @@ X fancy (borders, radius, shadows,...)
   transition: none;
 }
 
-/* line 617, ../../app/assets/stylesheets/_base.scss */
+/* line 623, ../../app/assets/stylesheets/_base.scss */
 #home.index #main article header figure,
 #winners-list li,
 #winner #profile {
@@ -2242,7 +2260,7 @@ X fancy (borders, radius, shadows,...)
   zoom: 1;
 }
 
-/* line 625, ../../app/assets/stylesheets/_base.scss */
+/* line 631, ../../app/assets/stylesheets/_base.scss */
 #home.index #main article:hover header figure,
 #winners-list li:hover,
 #winner #profile:hover {
@@ -2255,7 +2273,7 @@ X fancy (borders, radius, shadows,...)
   zoom: 1;
 }
 
-/* line 633, ../../app/assets/stylesheets/_base.scss */
+/* line 639, ../../app/assets/stylesheets/_base.scss */
 #albums #content .gallery-type li.columns h3:after,
 .share-links-type .inner:after,
 header h3:after,
@@ -2272,12 +2290,12 @@ header h3:after,
   left: 25px;
 }
 
-/* line 636, ../../app/assets/stylesheets/_base.scss */
+/* line 642, ../../app/assets/stylesheets/_base.scss */
 .share-links-type .inner:after {
   visibility: visible;
 }
 
-/* line 639, ../../app/assets/stylesheets/_base.scss */
+/* line 645, ../../app/assets/stylesheets/_base.scss */
 footer .btn:after {
   content: "";
   display: block;
@@ -2291,17 +2309,17 @@ footer .btn:after {
   left: 25px;
 }
 
-/* line 643, ../../app/assets/stylesheets/_base.scss */
+/* line 649, ../../app/assets/stylesheets/_base.scss */
 footer .btn.read-more:after {
   border-bottom-color: #4D4D4D;
 }
 
-/* line 644, ../../app/assets/stylesheets/_base.scss */
+/* line 650, ../../app/assets/stylesheets/_base.scss */
 footer .btn.date:after {
   border-bottom-color: #4d0000;
 }
 
-/* line 645, ../../app/assets/stylesheets/_base.scss */
+/* line 651, ../../app/assets/stylesheets/_base.scss */
 .top-date:after {
   border-top-color: #4d0000;
   left: auto;
@@ -2318,7 +2336,7 @@ footer .btn.date:after {
 */
 /* #Media Queries
 ================================================== */
-/* line 659, ../../app/assets/stylesheets/_base.scss */
+/* line 665, ../../app/assets/stylesheets/_base.scss */
 .dimension {
   height: 40px;
   background: white;
@@ -2326,7 +2344,7 @@ footer .btn.date:after {
   display: none;
 }
 
-/* line 660, ../../app/assets/stylesheets/_base.scss */
+/* line 666, ../../app/assets/stylesheets/_base.scss */
 .dimension:after {
   content: "max";
   background: white;
@@ -2339,104 +2357,104 @@ footer .btn.date:after {
 
 /* Smaller than standard 960 (devices and browsers) */
 @media only screen and (max-width: 959px) {
-  /* line 663, ../../app/assets/stylesheets/_base.scss */
+  /* line 669, ../../app/assets/stylesheets/_base.scss */
   .dimension:after {
     content: 'max-width: 959px';
   }
 
-  /* line 664, ../../app/assets/stylesheets/_base.scss */
+  /* line 670, ../../app/assets/stylesheets/_base.scss */
   header.region.border-region {
     height: 260px;
   }
 }
 /* Tablet Portrait size to standard 960 (devices and browsers) */
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 669, ../../app/assets/stylesheets/_base.scss */
+  /* line 675, ../../app/assets/stylesheets/_base.scss */
   .dimension:after {
     content: 'min-width: 768px, max-width: 959px';
   }
 
-  /* line 670, ../../app/assets/stylesheets/_base.scss */
+  /* line 676, ../../app/assets/stylesheets/_base.scss */
   header.region.border-region {
     height: 360px;
   }
 
-  /* line 671, ../../app/assets/stylesheets/_base.scss */
+  /* line 677, ../../app/assets/stylesheets/_base.scss */
   #contatos.new section .inner form .actions {
     width: 210px;
   }
 
-  /* line 672, ../../app/assets/stylesheets/_base.scss */
+  /* line 678, ../../app/assets/stylesheets/_base.scss */
   #contatos.new label {
     text-align: left;
   }
 
-  /* line 673, ../../app/assets/stylesheets/_base.scss */
+  /* line 679, ../../app/assets/stylesheets/_base.scss */
   #contatos.new section .inner.datos-contacto h4 {
     font-size: 1.9em;
   }
 }
 /* All Mobile Sizes (devices and browser) */
 @media only screen and (max-width: 767px) {
-  /* line 677, ../../app/assets/stylesheets/_base.scss */
+  /* line 683, ../../app/assets/stylesheets/_base.scss */
   .dimension:after {
     content: 'max-width: 767px';
   }
 
-  /* line 678, ../../app/assets/stylesheets/_base.scss */
+  /* line 684, ../../app/assets/stylesheets/_base.scss */
   header.region.border-region {
     height: 360px;
   }
 
   /* Integrantes */
-  /* line 681, ../../app/assets/stylesheets/_base.scss */
+  /* line 687, ../../app/assets/stylesheets/_base.scss */
   #integrantes article {
     position: relative;
     padding-top: 70px;
   }
 
-  /* line 682, ../../app/assets/stylesheets/_base.scss */
+  /* line 688, ../../app/assets/stylesheets/_base.scss */
   #integrantes.show article {
     padding-top: 20px;
   }
 
-  /* line 683, ../../app/assets/stylesheets/_base.scss */
+  /* line 689, ../../app/assets/stylesheets/_base.scss */
   #integrantes article header {
     position: absolute;
     top: 0;
     left: 0;
   }
 
-  /* line 684, ../../app/assets/stylesheets/_base.scss */
+  /* line 690, ../../app/assets/stylesheets/_base.scss */
   #integrantes article figure {
     margin-bottom: 10px;
   }
 
-  /* line 685, ../../app/assets/stylesheets/_base.scss */
+  /* line 691, ../../app/assets/stylesheets/_base.scss */
   #contatos.new section .inner form .actions {
     width: 200px;
   }
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 690, ../../app/assets/stylesheets/_base.scss */
+  /* line 696, ../../app/assets/stylesheets/_base.scss */
   .dimension:after {
     content: 'min-width: 480px, max-width: 767px';
   }
 
-  /* line 691, ../../app/assets/stylesheets/_base.scss */
+  /* line 697, ../../app/assets/stylesheets/_base.scss */
   header.region.border-region {
     height: 300px;
   }
 }
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {
-  /* line 696, ../../app/assets/stylesheets/_base.scss */
+  /* line 702, ../../app/assets/stylesheets/_base.scss */
   .dimension:after {
     content: 'max-width: 479px';
   }
 
-  /* line 697, ../../app/assets/stylesheets/_base.scss */
+  /* line 703, ../../app/assets/stylesheets/_base.scss */
   header.region.border-region {
     height: 260px;
   }

@@ -6,6 +6,7 @@ pt:
   submit: Salvar
   send: Enviar
   back: Voltar
+  sair: Sair
   albums:
     index:
       title: Albums
@@ -43,6 +44,9 @@ pt:
     new: Nova Musica
     edit:
       title: Editar musica
+  informacoes:
+    index:
+      title: Informacoes
   patrocinadores:
     index:
       title: Patrocinadores
@@ -323,3 +327,9 @@ pt:
         data: Data
       video:
         link: Link de Youtube ou Vimeo
+      informacao:
+        telefone: Telefone
+        descricao: Descrição
+        frases_chave: Frases Chave
+        video: Video
+        

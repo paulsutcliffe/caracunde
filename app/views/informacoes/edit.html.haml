@@ -1,0 +1,7 @@
+%h2.title
+  = page_title! t('informacao.edit')
+
+#content
+  = render 'form'
+  = link_to t('show'), @informacao, :class => 'button show'
+  = link_to t('back'), informacoes_path, :class => 'button back'

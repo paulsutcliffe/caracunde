@@ -6,6 +6,7 @@ en:
   submit: Save
   send: Submit
   back: Back
+  sair: Logout
   albums:
     index:
       title: Albums
@@ -43,6 +44,9 @@ en:
     new: New Music
     edit:
       title: Edit music
+  informacoes:
+    index:
+      title: Information
   patrocinadores:
     index:
       title: Sponsors
@@ -278,3 +282,52 @@ en:
   activerecord:
     errors:
       <<: *errors
+      messages:
+        album:
+          invalid_record: Album couldn't been saved
+        contato:
+          invalid_record: Contato couldn't been saved
+        foto:
+          invalid_record: Photo não foi possível salvar a foto
+        integrante:
+          invalid_record: Integrante couldn't been saved
+        musica:
+          invalid_record: Music não foi possível salvar
+        patrocinador:
+          invalid_record: Sponsor couldn't been saved
+        post:
+          invalid_record: Post couldn't been saved
+        slide:
+          invalid_record: Slide couldn't been saved
+        video:
+          invalid_record: Video couldn't been saved
+    attributes:
+      album:
+        nome: Name
+      contato:
+        nome: Name
+        email: E-mail
+        telefone: Phone
+        mensagem: Message
+      foto:
+        album_id: Album
+      integrante:
+        nome: Name
+        descricao: Description
+        pais: Country
+      musica:
+        soundcloud: Code for embedding Soundcloud
+      patrocinador:
+        link: Link to website
+      post:
+        titulo: Título
+        conteudo: Content
+        data: Data
+      video:
+        link: Link Youtube or Vimeo
+      informacao:
+        telefone: Telephone
+        descricao: Description
+        frases_chave: Keywords
+        video: Video
+

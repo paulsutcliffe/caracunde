@@ -1,0 +1,27 @@
+%h2.title
+  = page_title! "informacao"
+
+#content
+  %p
+    = t('activerecord.attributes.informacao.seo_text')
+    = @informacao.seo_text
+
+  %p
+    = t('activerecord.attributes.informacao.telefone')
+    = @informacao.telefone
+
+  %p
+    = t('activerecord.attributes.informacao.descricao')
+    = @informacao.descricao
+
+  %p
+    = t('activerecord.attributes.informacao.frases_chave')
+    = @informacao.frases_chave
+  
+  %p
+    = t('activerecord.attributes.informacao.video')
+    = @informacao.video
+  
+  - if current_usuario
+    = link_to t('edit'), edit_informacao_path(@informacao)
+  = link_to t('back'), informacoes_path

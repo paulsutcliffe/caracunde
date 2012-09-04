@@ -26,6 +26,9 @@
 
     #main
       #content.region.border-region
+        - flash.each do |name, msg|
+          #alert-top
+            = content_tag :div, msg, :id => "flash_#{name}", :class => "container"
         = yield
 
     #postscript-top.region.border-region.gallery-type
@@ -40,7 +43,9 @@
       .container.rotate-prevent
         .five.columns
           %p
-            Brasil: (15) 91438743
+            Brasil:
+            - if @informacao 
+              = @informacao.telefone
             %br
             info@caracunde.com
         .six.columns.link-type
@@ -61,12 +66,4 @@
             = link_to 'kosmyka', 'http://www.kosmyka.com', :target => '_blank'
     .dimension
 
-    #container
-      - flash.each do |name, msg|
-        = content_tag :div, msg, :id => "flash_#{name}"
-
-      - if show_title?
-        %h1= yield(:title)
-
-      - @slides.each do |slide|
-        = image_tag(slide.slide(:medium))
+   

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120904004058) do
+ActiveRecord::Schema.define(:version => 20120904012307) do
 
   create_table "albums", :force => true do |t|
     t.string   "nome"
@@ -39,6 +39,18 @@ ActiveRecord::Schema.define(:version => 20120904004058) do
     t.integer  "foto_file_size"
     t.datetime "foto_updated_at"
   end
+
+  create_table "informacao_translations", :force => true do |t|
+    t.integer  "informacao_id"
+    t.string   "locale"
+    t.text     "seo_text"
+    t.string   "video"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "informacao_translations", ["informacao_id"], :name => "index_informacao_translations_on_informacao_id"
+  add_index "informacao_translations", ["locale"], :name => "index_informacao_translations_on_locale"
 
   create_table "informacoes", :force => true do |t|
     t.text     "seo_text"

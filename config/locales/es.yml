@@ -6,6 +6,7 @@ es:
   submit: Guardar
   send: Enviar
   back: Volver
+  sair: Cerrar Sesión
   albums:
     index:
       title: Álbums
@@ -43,6 +44,9 @@ es:
     new: Nueva Música
     edit:
       title: Editar música
+  informacoes:
+    index:
+      title: Información
   patrocinadores:
     index:
       title: Patrocinadores
@@ -272,3 +276,52 @@ es:
   activerecord:
     errors:
       <<: *errors
+      messages:
+        album:
+          invalid_record: No fue posible guardar el álbum
+        contato:
+          invalid_record: No fue posible guardar el contato
+        foto:
+          invalid_record: Não foi possível salvar la foto
+        integrante:
+          invalid_record: No fue posible guardar el integrante
+        musica:
+          invalid_record: Não foi possível salvar la musica
+        patrocinador:
+          invalid_record: No fue posible guardar el patrocinador
+        post:
+          invalid_record: No fue posible guardar el post
+        slide:
+          invalid_record: No fue posible guardar el slide
+        video:
+          invalid_record: No fue posible guardar el video
+    attributes:
+      album:
+        nome: Nome
+      contato:
+        nome: Nombre
+        email: E-mail
+        telefone: Teléfono
+        mensagem: Mensaje
+      foto:
+        album_id: Álbum
+      integrante:
+        nome: Nombre
+        descricao: Descripción
+        pais: País
+      musica:
+        soundcloud: Código para embedir de Soundcloud
+      patrocinador:
+        link: Link a website
+      post:
+        titulo: Título
+        conteudo: Contenido
+        data: Data
+      video:
+        link: Link de Youtube o Vimeo
+      informacao:
+        telefone: Teléfono
+        descricao: Descripción
+        frases_chave: Frases Clave
+        video: Video
+

@@ -381,6 +381,12 @@ CONTENT TYPES
 
 a.button{color:black}
 
+
+#alert-top{position:fixed; top:0px; left:0; width:100%; z-index:200; background:green}
+#alert-top #flash_alert,
+#alert-top #flash_notice{top:auto;
+padding:10px 0; color:white}
+
 /* div.video-type ul
 ================================================== */
 .video-type{}

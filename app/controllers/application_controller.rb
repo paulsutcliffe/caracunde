@@ -7,6 +7,7 @@ class ApplicationController < ActionController::Base
   def load_slides_e_patrocinadores
     @slides = Slide.all
     @patrocinadores = Patrocinador.all
+    @informacao = Informacao.first
   end
 
   

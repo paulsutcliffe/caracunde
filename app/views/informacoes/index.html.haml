@@ -1,0 +1,24 @@
+%h2.title
+  = page_title! t('informacao.index')
+
+#content
+  - if current_usuario
+    = link_to t('informacao.new'), new_informacao_path
+  .table-head
+    =t('activerecord.attributes.informacao.seo_text')
+    =t('activerecord.attributes.informacao.telefone')
+    =t('activerecord.attributes.informacao.descricao')
+    =t('activerecord.attributes.informacao.frases_chave')
+    =t('activerecord.attributes.informacao.video')
+    - for informacao in @informacoes
+      .block{ :class => cycle(:odd, :even) }
+        = informacao.seo_text
+        = informacao.telefone
+        = informacao.descricao
+        = informacao.frases_chave
+        = informacao.video
+      - if current_usuario
+        .admin-controls
+          = link_to t('show'), informacao, :class => 'button show'
+          = link_to t('edit'), edit_informacao_path(informacao), :class => 'button edit'
+          = link_to t('destroy'), informacao, :confirm => I18n.t('confirm_delete'), :class => 'button delete', :method => :delete
