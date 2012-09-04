@@ -1,11 +1,11 @@
 require "bundler/capistrano"
 
-set :user, "dreamhostuser"
-set :domain, "dreamhostserver.dreamhost.com"
-set :project, "projectname"
-set :application, "applicationname"
+set :user, "railscaracunde"
+set :domain, "yorkville.dreamhost.com"
+set :project, "caracunde"
+set :application, "caracunde"
 set :applicationdir, "/home/#{user}/#{application}"  # The standard Dreamhost setup
-set :repository,  "git@github.com:githubusername/githubrepository.git"
+set :repository,  "git@github.com:paulsutcliffe/caracunde.git"
 default_run_options[:pty] = true
 
 default_environment['PATH']='/usr/lib/ruby/gems/1.8/bin:/home/#{user}/.gems/bin:/usr/local/bin:/usr/bin:/bin'
