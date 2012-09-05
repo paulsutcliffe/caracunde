@@ -4,16 +4,16 @@
       =t('contato.new')
     %section.sixteen.columns.alpha
       %header
-        %h3 Contrátanos
+        %h3= t('contatos.new.title')
       .inner.form
         - if notice
           %p#notice
             = notice
         = render 'form'
-           
+
     %section.sixteen.columns.alpha
       %header
-        %h3 Datos de contacto
+        %h3= t('contatos.new.dados')
       .inner.datos-contacto.seven.columns.alpha.omega
         %h4 Alvaro Ponde de León
         %span Director
@@ -26,7 +26,7 @@
         %p
           %b.email-caracunde hermeto
           (15) 91438743
-      
+
 
 
 

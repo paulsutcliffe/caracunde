@@ -1,6 +1,6 @@
 en:
-  ap:
-    name: Caracunde
+  app:
+    name: Caracunde Afro Peruvian Music
   show: Show
   edit: Edit
   destroy: Delete
@@ -19,10 +19,13 @@ en:
   contatos:
     index:
       title: Contacts
+    new:
+      title: Contact Us
+      dados: Contact Information
   contato:
     index:
       title: Contact
-    new: New Contact
+    new: Contact
     edit:
       title: Edit contact
   fotos:

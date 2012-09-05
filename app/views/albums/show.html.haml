@@ -1,12 +1,12 @@
 .container
   %section
     %h2.title.sixteen.columns.alpha
-      = @album.nome
-    
+      = page_title! @album.nome
+
     - if current_usuario
       .admin-links
         = link_to 'Adicionar Foto', new_album_foto_path(@album), :class => 'button add'
-       
+
     .share-links-type.sixteen.columns.alpha
       .inner
         = render 'shared/social_links'
@@ -18,11 +18,11 @@
         %ul
           - @album.fotos.each do |foto|
             %li.columns.seven{ :class => cycle(:odd, :even) }
-              = image_tag(foto.foto(:medium))     
+              = image_tag(foto.foto(:medium))
               - if current_usuario
                 .admin-links
                   = link_to t('destroy'), { :controller => 'fotos', :action => 'destroy', :id => foto.id, :album_id => @album.id }, :confirm => I18n.t('confirm_delete'), :method => :delete
-       
+
     .sixteen.columns.alpha.pagination-type
       = # will_paginate @albums
       - if current_usuario

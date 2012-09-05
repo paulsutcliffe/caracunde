@@ -2,14 +2,14 @@
   .container
     %section
       %h2.title.sixteen.columns.alpha
-        =  image_tag('/images/icons/' + @integrante.pais + '.png') + ' ' + @integrante.nome
-      
+        = image_tag('/images/icons/' + @integrante.pais + '.png') + ' ' + page_title!(@integrante.nome)
+
       .share-links-type.eight.columns.alpha.omega
         .inner
-          = render 'shared/social_links'        
+          = render 'shared/social_links'
       .sixteen.columns.alpha
         .figure.inner.eight.columns.omega
-          = image_tag(@integrante.retrato(:medium))          
+          = image_tag(@integrante.retrato(:medium))
         = sanitize(simple_format(@integrante.descricao), :tags => %w(p i br b))
         .sixteen.columns.alpha
           #facebook-comments
@@ -19,7 +19,7 @@
           = if current_usuario
             |
             = link_to t('edit'), edit_integrante_path(@integrante), :class => 'link back'
-              
+
 
 
 

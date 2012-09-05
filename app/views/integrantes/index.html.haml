@@ -9,13 +9,14 @@
     - for integrante in @integrantes
       %article.sixteen.columns.alpha
         %figure.inner.eight.columns.omega
-          = link_to image_tag('/images/images/img-integrante-index.jpg'), integrante
+          = link_to image_tag(integrante.retrato(:medium)), integrante
         .inner.eight.columns.alpha
           %header
             %h3
               = integrante.nome
+          %div#flag
+            = image_tag('/images/icons/' + integrante.pais + '.png', :size => "48x32")
           %div
-            = integrante.pais
             = sanitize(simple_format(truncate(integrante.descricao, :length => 370, :omission => '...')), :tags => %w(p i br b))
         %footer
           = link_to t('show'), integrante, :class => 'btn see-more'

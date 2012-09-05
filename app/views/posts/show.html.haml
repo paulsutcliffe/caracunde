@@ -2,10 +2,10 @@
   .container
     %section
       %h6.title.sixteen.columns.alpha
-        = @post.titulo
+        = page_title! @post.titulo
       .share-links-type.eight.columns.alpha.omega
         .inner
-          = render 'shared/social_links'          
+          = render 'shared/social_links'
       .sixteen.columns.alpha
         %span.top-date.btn
           = @post.data
@@ -20,4 +20,4 @@
           = link_to t('back'), posts_path, :class => 'link back'
           - if current_usuario
             = link_to t('edit'), edit_post_path(@post), :class => 'button edit'
-          
+

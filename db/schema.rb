@@ -43,8 +43,8 @@ ActiveRecord::Schema.define(:version => 20120904012307) do
   create_table "informacao_translations", :force => true do |t|
     t.integer  "informacao_id"
     t.string   "locale"
-    t.text     "seo_text"
     t.string   "video"
+    t.text     "seo_text"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -65,8 +65,8 @@ ActiveRecord::Schema.define(:version => 20120904012307) do
   create_table "integrante_translations", :force => true do |t|
     t.integer  "integrante_id"
     t.string   "locale"
-    t.string   "nome"
     t.text     "descricao"
+    t.string   "nome"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

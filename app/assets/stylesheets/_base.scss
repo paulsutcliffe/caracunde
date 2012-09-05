@@ -76,13 +76,13 @@ td { vertical-align: top; }
 
 
 /* ==|== print styles ======================================================= */
- 
+
 @media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
   thead { display: table-header-group; }
   tr, img { page-break-inside: avoid; }
@@ -95,10 +95,10 @@ td { vertical-align: top; }
 
 
 
-/* 
-================================================== 
+/*
+==================================================
 DEFAULT
-================================================== 
+==================================================
 */
 
 body{font:normal normal 16px/145% Arial, Helvetica, sans-serif; background:black; overflow:hidden}
@@ -107,7 +107,7 @@ a{
   -moz-transition: all 0.3s ease-out;  /* FF3.7+ */
   -o-transition: all 0.3s ease-out;  /* Opera 10.5 */
   -webkit-transition: all 0.3s ease-out;  /* Saf3.2+, Chrome */
-  transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
   text-decoration:none
 }
 
@@ -125,10 +125,10 @@ img, iframe{width:100%}
 
 
 
-/* 
-================================================== 
+/*
+==================================================
 TIPOGRAPHY
-================================================== 
+==================================================
 */
 
 /* Headings
@@ -148,10 +148,10 @@ h2.title img{width:auto; position:relative; top:-7px; margin-right:5px}
 p, div, span, li, dt, dt{font-family:'Capriola'}
 p{text-align:justify}
 
-/* 
-================================================== 
+/*
+==================================================
 HEADER
-================================================== 
+==================================================
 */
 
 header.main{position:relative}
@@ -162,7 +162,7 @@ header.main #logo{text-align:center}
 header.main #logo a{margin:0 auto; display:inline-block; float:none}
 header.main .menu{height:40px; margin-left:30px}
 header.main .menu ul{float:left}
-header.main .menu nav{background:black; -moz-border-radius:0 0 15px 15px; -webkit-border-radius:0 0 15px 15px; 
+header.main .menu nav{background:black; -moz-border-radius:0 0 15px 15px; -webkit-border-radius:0 0 15px 15px;
 -o-border-radius:0 0 15px 15px; -ms-border-radius:0 0 15px 15px; border-radius:0 0 15px 15px}
 header.main .menu li{float:left; list-style:none; margin:0}
 header.main .menu li a,
@@ -197,10 +197,10 @@ header.region.border-region .container{top:0}
 #preface-bottom:after{background:#ff0000}
 .region.border-region .container{position:relative; top:-25px}
 
-/* 
-================================================== 
+/*
+==================================================
 FOOTER
-================================================== 
+==================================================
 */
 
 footer.main{overflow:visible}
@@ -291,6 +291,7 @@ border-color:transparent transparent #4d4d4d transparent; border-style:solid; bo
 #integrantes article footer a.link.back{text-transform:uppercase}
 #integrantes.show article figure,
 #integrantes.show .figure{margin-left:20px}
+#integrantes.index #flag{width:48px; margin:2px}
 
 #home section header,
 #home article header
@@ -638,13 +639,13 @@ zoom: 1}
 #albums #content .gallery-type li.columns h3:after,
 .share-links-type .inner:after,
 header h3:after,
-.top-date:after{content:""; display:block; width:0; height:0; border-width:10px; border-style:solid; 
-border-color:white transparent transparent transparent; 
+.top-date:after{content:""; display:block; width:0; height:0; border-width:10px; border-style:solid;
+border-color:white transparent transparent transparent;
 position:absolute; top:100%; left:25px}
 .share-links-type .inner:after{visibility:visible}
 
 
-footer .btn:after{content:""; display:block; width:0; height:0; border-width:10px; border-style:solid; 
+footer .btn:after{content:""; display:block; width:0; height:0; border-width:10px; border-style:solid;
 border-color:transparent transparent white transparent;
 position:absolute; bottom:98%; left:25px}
 
@@ -684,7 +685,7 @@ footer .btn.date:after{border-bottom-color:#4d0000}
 	@media only screen and (max-width: 767px) {
 	  .dimension:after{content:'max-width: 767px'}
 	  header.region.border-region{height:360px}
-	  
+
 	  /* Integrantes */
 	  #integrantes article{position:relative; padding-top:70px}
 	  #integrantes.show article{padding-top:20px}
@@ -692,17 +693,17 @@ footer .btn.date:after{border-bottom-color:#4d0000}
 	  #integrantes article figure{margin-bottom:10px}
           #contatos.new section .inner form .actions{width:200px}
 	}
-	
+
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 	@media only screen and (min-width: 480px) and (max-width: 767px) {
 	  .dimension:after{content:'min-width: 480px, max-width: 767px'}
-	  header.region.border-region{height:300px}		
+	  header.region.border-region{height:300px}
 	}
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 	@media only screen and (max-width: 479px) {
 	  .dimension:after{content:'max-width: 479px'}
-	  header.region.border-region{height:260px}	
+	  header.region.border-region{height:260px}
 	}
 
 
