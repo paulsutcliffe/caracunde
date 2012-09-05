@@ -1,6 +1,9 @@
 pt:
   app:
     name: Caracunde Musica Afro-Peruana
+  layout:
+    copyright: Todos os direitos reservados
+    desenvolvimento: Web design e Desenvolvimento Web por
   show: Olhar
   edit: Editar
   destroy: Apagar

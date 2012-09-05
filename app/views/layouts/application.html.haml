@@ -74,9 +74,9 @@
           = image_tag('/images/logo-footer.png')
         #footer-bottom.sixteen.columns
           %p#copyright.eight.columns.alpha
-            Caracunde 2012, Todos los derechos reservados.
+            = 'Caracunde 2012, ' + t('layout.copyright')
           %p#author.eight.columns.omega
-            web development and web design by
+            = t('layout.desenvolvimento')
             = link_to 'kosmyka', 'http://www.kosmyka.com', :target => '_blank'
     .dimension
 
