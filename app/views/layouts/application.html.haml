@@ -28,11 +28,13 @@
     %header.main.region.border-region
       #main-menu.container
         = render 'layouts/menu'
-      #slider
-        .flexslider.carousel
-          %ul.slides.rotate-prevent-img
-            %li.royalSlide
-              = image_tag("/images/images/img-slide.jpg")
+      
+      - if params[:controller] == 'home'
+        #slider
+          .flexslider.carousel
+            %ul.slides.rotate-prevent-img
+              %li.royalSlide
+                = image_tag("/images/images/img-slide.jpg")
       #logo
         %h1#logo-wrapper.container
           %span Caracunde

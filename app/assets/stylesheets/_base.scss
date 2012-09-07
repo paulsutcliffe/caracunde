@@ -157,6 +157,8 @@ HEADER
 header.main{position:relative}
 header.main #slider{height:700px; position:relative; top:-80px; overflow: hidden}
 header.main #logo{width:100%; position:absolute; left:0; top:60%; text-align:center; z-index:5999}
+.not-front header.main #logo{position:relative; top:auto}
+.not-front header.region.border-region{padding-bottom:60px}
 header.main #logo span{display:none}
 header.main #logo{text-align:center}
 header.main #logo a{margin:0 auto; display:inline-block; float:none}
@@ -190,7 +192,8 @@ header .rotate-default{}
 .region.border-region:after{content:""; visibility:visible; z-index:20px; background:black;
 border-top:40px solid white;
 position:absolute; bottom:-100px; left:-10%; width:120%; height:200px; -moz-transform:rotate(-2deg)}
-header.region.border-region{height:560px}
+.front header.region.border-region{height:560px}
+header.region.border-region{}
 header.region.border-region:after{border-color:transparent}
 header.region.border-region .container{top:0}
 #preface-bottom{background:black}

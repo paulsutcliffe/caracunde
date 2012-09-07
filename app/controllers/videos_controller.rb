@@ -4,12 +4,12 @@ class VideosController < InheritedResources::Base
     @videos = Video.paginate(:page => params[:page], :per_page => 6)
   end
   def create
-    create!(:notice => "Video criado corretamente")
+    create!(:notice => "Video criado corretamente"){ videos_path }
   end
   def update
-    update!(:notice => "Video atualizado corretamente")
+    update!(:notice => "Video atualizado corretamente"){ videos_path }
   end
   def destroy
-    destroy!(:notice => "Video apagado corretamente")
+    destroy!(:notice => "Video apagado corretamente") { videos_path }
   end
 end

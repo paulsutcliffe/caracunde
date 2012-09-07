@@ -1,4 +1,8 @@
 pt:
+  will_paginate:
+    previous_label: "Voltar"
+    next_label: "Seguente"
+    page_gap: "&hellip;"
   app:
     name: Caracunde Musica Afro-Peruana
   layout:

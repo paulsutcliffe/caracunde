@@ -9,15 +9,16 @@ Funcionalidade: Criar, editar e apagar videos
     E preencho "Link" com "http://www.youtube.com/watch?v=8pJwClS1TeQ"
     Quando pressiono "Salvar"
     Então deveria ver "Video criado corretamente"
-    E deveria ver o link "http://www.youtube.com/watch?v=8pJwClS1TeQ"
-
+    E deveria ver o video
+  
   Cenário: Editar um video
     Quando o video "http://www.youtube.com/watch?v=8pJwClS1TeQ" existir
     E visito "/videos"
     E clico "Editar"
-    E preencho "Link" com "http://www.youtube.com/watch?v=8pJwClS1TeQ"
+    E preencho "Link" com "http://www.youtube.com/watch?v=oZhPL603bdk"
     Quando pressiono "Salvar"
     Então deveria ver "Video atualizado corretamente"
+    E deveria ver o video
 
   Cenário: Apagar um video
     Quando o video "http://www.youtube.com/watch?v=8pJwClS1TeQ" existir
