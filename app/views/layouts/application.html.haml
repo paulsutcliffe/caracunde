@@ -5,6 +5,7 @@
     %title
       = page_title
     %meta{"http-equiv"=>"Content-Type", :content=>"text/html; charset=utf-8"}/
+    = favicon_link_tag "/favicon.png"
     = stylesheet_link_tag "/stylesheets/base.css", "/stylesheets/skeleton.css", "/stylesheets/screen.css", "http://fonts.googleapis.com/css?family=Capriola"
     = javascript_include_tag :defaults
     = csrf_meta_tag
@@ -24,11 +25,12 @@
     == <meta name="geo.placename" content="São Paulo, Brasil" />
     == <meta name="geo.region" content="BR-SaoPaulo" />
 
+
   %body{:id => bodyid, :class => bodyclass}
     %header.main.region.border-region
       #main-menu.container
         = render 'layouts/menu'
-      
+
       - if params[:controller] == 'home'
         #slider
           .flexslider.carousel
