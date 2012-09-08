@@ -1,8 +1,6 @@
 class VideosController < InheritedResources::Base
-  before_filter :authenticate_usuario!, :except => [:index]  
-  def index
-    @videos = Video.paginate(:page => params[:page], :per_page => 6)
-  end
+  before_filter :authenticate_usuario!, :except => [:index]
+
   def create
     create!(:notice => "Video criado corretamente"){ videos_path }
   end
@@ -12,4 +10,8 @@ class VideosController < InheritedResources::Base
   def destroy
     destroy!(:notice => "Video apagado corretamente") { videos_path }
   end
+  protected
+    def collection
+      @videos ||= end_of_association_chain.order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
+    end
 end

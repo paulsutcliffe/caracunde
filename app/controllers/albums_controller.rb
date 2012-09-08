@@ -10,4 +10,8 @@ class AlbumsController < InheritedResources::Base
   def destroy
     destroy!(:notice => "Album apagado corretamente")
   end
+  protected
+    def collection
+      @albums ||= end_of_association_chain.order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
+    end
 end

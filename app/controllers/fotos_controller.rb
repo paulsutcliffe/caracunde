@@ -8,4 +8,8 @@ class FotosController < InheritedResources::Base
   def destroy
     destroy!(:notice => "Foto apagada corretamente") { album_path(@foto.album_id) }
   end
+  protected
+    def collection
+      @fotos ||= end_of_association_chain.order("created_at DESC").paginate(:page => params[:page], :per_page => 12)
+    end
 end

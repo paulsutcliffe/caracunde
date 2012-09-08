@@ -9,4 +9,8 @@ class MusicasController < InheritedResources::Base
   def destroy
     destroy!(:notice => "Musica apagada corretamente")
   end
+  protected
+    def collection
+      @musicas ||= end_of_association_chain.order("created_at DESC").paginate(:page => params[:page], :per_page => 6)
+    end
 end

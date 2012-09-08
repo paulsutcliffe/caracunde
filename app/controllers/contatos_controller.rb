@@ -13,4 +13,8 @@ class ContatosController < InheritedResources::Base
   def destroy
     destroy!(:notice => "Contato apagado corretamente")
   end
+  protected
+    def collection
+      @contatos ||= end_of_association_chain.order("created_at DESC").paginate(:page => params[:page], :per_page => 24)
+    end
 end

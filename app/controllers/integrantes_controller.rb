@@ -9,4 +9,8 @@ class IntegrantesController < InheritedResources::Base
   def destroy
     destroy!(:notice => "Integrante apagado corretamente")
   end
+  protected
+    def collection
+      @integrantes ||= end_of_association_chain.order("created_at DESC")
+    end
 end
