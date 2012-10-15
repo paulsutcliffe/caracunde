@@ -8,6 +8,6 @@ class ContatosMailer < ActionMailer::Base
 
   def notificacao_de_contato(contato)
     @contato = contato
-    mail(:to => "#{contato.nome} <#{contato.email}>", :subject => "Mensagem Enviada Caracunde")
+    mail(:to => "#{contato.nome} <#{contato.email}>", :reply_to => contato.email, :subject => "Mensagem Enviada Caracunde")
   end
 end
